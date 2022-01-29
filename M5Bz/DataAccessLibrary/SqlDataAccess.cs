@@ -5,7 +5,7 @@ using System.Data.SqlClient;
 
 namespace DataAccessLibrary
 {
-    public class SqlDataAccess
+    public class SqlDataAccess : ISqlDataAccess
     {
         private readonly IConfiguration _config;
         public string ConnectionStringName { get; set; } = "Default";
@@ -26,7 +26,7 @@ namespace DataAccessLibrary
             }
         }
 
-        public async Task SaveData<T>(string sql, T parameters) 
+        public async Task SaveData<T>(string sql, T parameters)
         {
             string connectionString = _config.GetConnectionString(ConnectionStringName);
             using (IDbConnection connection = new SqlConnection(connectionString))
