@@ -25,6 +25,17 @@ namespace DataAccessLibrary
                 return data.ToList();
             }
         }
+        public async Task<T> GetData<T, U>(string sql, U parameters)
+        {
+            string connectionString = _config.GetConnectionString(ConnectionStringName);
+            using (IDbConnection connection = new SqlConnection(connectionString))
+            {
+                var data = await connection.QueryAsync<T>(sql, parameters);
+
+                T? t = data.FirstOrDefault();
+                return t;
+            }
+        }
 
         public async Task SaveData<T>(string sql, T parameters)
         {

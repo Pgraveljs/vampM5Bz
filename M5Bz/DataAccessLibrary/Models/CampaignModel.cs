@@ -1,5 +1,5 @@
 ﻿
-namespace DataAccessLibrary.Model
+namespace DataAccessLibrary.Models
 {
     public class CampaignModel
     {
