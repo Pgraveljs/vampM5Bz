@@ -48,7 +48,6 @@ C:\Users\orwin\OneDrive\Documents\GitHub\vampM5Bz\M5Bz\M5Blz\obj\Debug\net6.0\M5
 C:\Users\orwin\OneDrive\Documents\GitHub\vampM5Bz\M5Bz\M5Blz\obj\Debug\net6.0\M5Blz.AssemblyInfoInputs.cache
 C:\Users\orwin\OneDrive\Documents\GitHub\vampM5Bz\M5Bz\M5Blz\obj\Debug\net6.0\M5Blz.AssemblyInfo.cs
 C:\Users\orwin\OneDrive\Documents\GitHub\vampM5Bz\M5Bz\M5Blz\obj\Debug\net6.0\M5Blz.csproj.CoreCompileInputs.cache
-C:\Users\orwin\OneDrive\Documents\GitHub\vampM5Bz\M5Bz\M5Blz\obj\Debug\net6.0\M5Blz.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\orwin\OneDrive\Documents\GitHub\vampM5Bz\M5Bz\M5Blz\obj\Debug\net6.0\M5Blz.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\orwin\OneDrive\Documents\GitHub\vampM5Bz\M5Bz\M5Blz\obj\Debug\net6.0\M5Blz.RazorAssemblyInfo.cache
 C:\Users\orwin\OneDrive\Documents\GitHub\vampM5Bz\M5Bz\M5Blz\obj\Debug\net6.0\M5Blz.RazorAssemblyInfo.cs
@@ -63,3 +62,13 @@ C:\Users\orwin\OneDrive\Documents\GitHub\vampM5Bz\M5Bz\M5Blz\obj\Debug\net6.0\M5
 C:\Users\orwin\OneDrive\Documents\GitHub\vampM5Bz\M5Bz\M5Blz\obj\Debug\net6.0\ref\M5Blz.dll
 C:\Users\orwin\OneDrive\Documents\GitHub\vampM5Bz\M5Bz\M5Blz\obj\Debug\net6.0\M5Blz.pdb
 C:\Users\orwin\OneDrive\Documents\GitHub\vampM5Bz\M5Bz\M5Blz\obj\Debug\net6.0\M5Blz.genruntimeconfig.cache
+C:\Users\orwin\OneDrive\Documents\GitHub\vampM5Bz\M5Bz\M5Blz\bin\Debug\net6.0\Dapper.dll
+C:\Users\orwin\OneDrive\Documents\GitHub\vampM5Bz\M5Bz\M5Blz\bin\Debug\net6.0\System.Data.SqlClient.dll
+C:\Users\orwin\OneDrive\Documents\GitHub\vampM5Bz\M5Bz\M5Blz\bin\Debug\net6.0\runtimes\win-arm64\native\sni.dll
+C:\Users\orwin\OneDrive\Documents\GitHub\vampM5Bz\M5Bz\M5Blz\bin\Debug\net6.0\runtimes\win-x64\native\sni.dll
+C:\Users\orwin\OneDrive\Documents\GitHub\vampM5Bz\M5Bz\M5Blz\bin\Debug\net6.0\runtimes\win-x86\native\sni.dll
+C:\Users\orwin\OneDrive\Documents\GitHub\vampM5Bz\M5Bz\M5Blz\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\orwin\OneDrive\Documents\GitHub\vampM5Bz\M5Bz\M5Blz\bin\Debug\net6.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\orwin\OneDrive\Documents\GitHub\vampM5Bz\M5Bz\M5Blz\bin\Debug\net6.0\DataAccessLibrary.dll
+C:\Users\orwin\OneDrive\Documents\GitHub\vampM5Bz\M5Bz\M5Blz\bin\Debug\net6.0\DataAccessLibrary.pdb
+C:\Users\orwin\OneDrive\Documents\GitHub\vampM5Bz\M5Bz\M5Blz\obj\Debug\net6.0\M5Blz.MvcApplicationPartsAssemblyInfo.cs

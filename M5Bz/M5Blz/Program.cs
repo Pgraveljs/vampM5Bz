@@ -1,14 +1,18 @@
-using M5Blz.Data;
-using Microsoft.EntityFrameworkCore;
+using DataAccessLibrary;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
-builder.Services.AddDbContext<ApplicationDbContext>(options =>
-    options.UseSqlServer(connectionString));
+
+//var connectionString = builder.Configuration.GetConnectionString("Default");
+//builder.Services.AddDbContext<ApplicationDbContext>(options =>
+//    options.UseSqlServer(connectionString));
+
 builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
+builder.Services.AddTransient<ISqlDataAccess, SqlDataAccess>();
+builder.Services.AddTransient<ICampaignData, CampaignData>();
+builder.Services.AddTransient<IUserData, UserData>();
 
 var app = builder.Build();
 

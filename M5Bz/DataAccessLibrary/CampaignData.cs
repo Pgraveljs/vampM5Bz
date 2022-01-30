@@ -1,13 +1,8 @@
-﻿using DataAccessLibrary.Model;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using DataAccessLibrary.Models;
 
 namespace DataAccessLibrary
 {
-    public class CampaignData
+    public class CampaignData : ICampaignData
     {
         private readonly ISqlDataAccess _db;
 
@@ -20,6 +15,13 @@ namespace DataAccessLibrary
         {
             string sql = "select * from dbo.Campaign";
             return _db.LoadData<CampaignModel, dynamic>(sql, new { });
+        }
+
+        public Task InsertCampaign(CampaignModel campaign)
+        {
+            string sql = @"insert into dbo.Campaign (Name, CreationDate)
+                            value (@Name, @CreationDate);";
+            return _db.SaveData(sql, campaign);
         }
     }
 }

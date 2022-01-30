@@ -1,0 +1,74 @@
+﻿@page "/Core/Users"
+@using DataAccessLibrary
+@using DataAccessLibrary.Models
+@using M5Blz.Models
+
+@inject IUserData _db
+
+<h1>Utilisateurs</h1>
+
+<h4>Ajouter un utilisateur</h4>
+<EditForm Model="@newUser" OnValidSubmit="@InsertUser">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+    
+    <InputText id="firstName" @bind-Value="newUser.FirstName" />
+    <InputText id="lastName" @bind-Value="newUser.LastName" />
+    <InputText id="code" @bind-Value="newUser.Code" />
+    <InputCheckbox id="isDM" @bind-Value="newUser.IsDM" />
+
+    <button type="submit" class="btn btn-primary">Ajouter</button>
+
+</EditForm>
+
+<h4>Liste des utilisateurs</h4>
+@if (users is null)
+{
+    <p><em>Loading...</em></p> 
+}
+else
+{
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Prénom</th>
+                <th>Nom</th>
+                <th>Code</th>
+                <th>Maître de jeu</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach(var user in users)
+            {
+                <tr>
+                    <td>@user.FirstName</td>
+                    <td>@user.LastName</td>
+                    <td>@user.Code</td>
+                    <td><span class="@(user.IsDM == true ? "oi oi-circle-check" : "")" aria-hidden="true"></span></td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+@code {
+    private List<UserModel> users;
+    private DisplayUserModel newUser = new DisplayUserModel();
+
+    protected override async Task OnInitializedAsync()
+    {
+        users = await _db.GetUsers();
+    }
+
+    private async Task InsertUser()
+    {
+        UserModel model = new UserModel
+        {
+            FirstName = newUser.FirstName,
+            LastName = newUser.LastName,
+            Code = newUser.Code,
+            IsDM = newUser.IsDM
+        };
+        await _db.InsertUser(model);
+        users.Add(model);
+    }
+}
