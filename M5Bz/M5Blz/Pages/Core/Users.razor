@@ -1,58 +1,71 @@
-﻿@page "/Core/Users"
-@using DataAccessLibrary
+﻿@page "/Users"
 @using DataAccessLibrary.Models
+@using DataAccessLibrary
 @using M5Blz.Models
 
 @inject IUserData _db
-
-<h1>Utilisateurs</h1>
-
-<h4>Ajouter un utilisateur</h4>
-<EditForm Model="@newUser" OnValidSubmit="@InsertUser">
-    <DataAnnotationsValidator />
-    <ValidationSummary />
-    
-    <InputText id="firstName" @bind-Value="newUser.FirstName" />
-    <InputText id="lastName" @bind-Value="newUser.LastName" />
-    <InputText id="code" @bind-Value="newUser.Code" />
-    <InputCheckbox id="isDM" @bind-Value="newUser.IsDM" />
-
-    <button type="submit" class="btn btn-primary">Ajouter</button>
-
-</EditForm>
-
-<h4>Liste des utilisateurs</h4>
-@if (users is null)
+@inject Services.AppData appData
+@if(appData.IsDM == true)
 {
-    <p><em>Loading...</em></p> 
+    <a href="/" class="oi oi-home float-end mx-2 fs-4"></a>  
+    <br />
+    <hr />
+
+    <h1>Utilisateurs</h1>
+
+    <h4>Ajouter un utilisateur</h4>
+    <EditForm Model="@newUser" OnValidSubmit="@InsertUser">
+        <DataAnnotationsValidator />
+        <ValidationSummary />
+    
+        <InputText id="firstName" @bind-Value="newUser.FirstName" />
+        <InputText id="lastName" @bind-Value="newUser.LastName" />
+        <InputText id="code" @bind-Value="newUser.Code" />
+        <InputCheckbox id="isDM" @bind-Value="newUser.IsDM" />
+
+        <button type="submit" class="btn btn-primary">Ajouter</button>
+
+    </EditForm>
+                    <br />
+                    <hr />
+    <h4>Liste des utilisateurs</h4>
+
+    @if (users is null)
+    {
+        <p><em>Loading...</em></p>
+    }
+    else
+    {
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Prénom</th>
+                    <th>Nom</th>
+                    <th>Code</th>
+                    <th>Maître de jeu</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach(var user in users)
+                {
+                    <tr>
+                        <td>@user.FirstName</td>
+                        <td>@user.LastName</td>
+                        <td>@user.Code</td>
+                        <td><span class="@(user.IsDM == true ? "oi oi-circle-check" : "")" aria-hidden="true"></span></td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
 }
 else
 {
-    <table class="table table-striped">
-        <thead>
-            <tr>
-                <th>Prénom</th>
-                <th>Nom</th>
-                <th>Code</th>
-                <th>Maître de jeu</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach(var user in users)
-            {
-                <tr>
-                    <td>@user.FirstName</td>
-                    <td>@user.LastName</td>
-                    <td>@user.Code</td>
-                    <td><span class="@(user.IsDM == true ? "oi oi-circle-check" : "")" aria-hidden="true"></span></td>
-                </tr>
-            }
-        </tbody>
-    </table>
+    <div>Retour à l'acceuil <a href="/" class="oi oi-home float-end mx-2 fs-4"></a> </div>
 }
 @code {
     private List<UserModel> users;
-    private DisplayUserModel newUser = new DisplayUserModel();
+    private DisplayUserModel newUser = new ();
 
     protected override async Task OnInitializedAsync()
     {
@@ -61,7 +74,7 @@ else
 
     private async Task InsertUser()
     {
-        UserModel model = new UserModel
+        UserModel model = new ()
         {
             FirstName = newUser.FirstName,
             LastName = newUser.LastName,

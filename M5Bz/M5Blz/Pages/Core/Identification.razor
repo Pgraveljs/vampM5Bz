@@ -1,0 +1,41 @@
+﻿@using DataAccessLibrary
+@using DataAccessLibrary.Models
+@using M5Blz.Models
+@using M5Blz.Services
+
+@inject IUserData _db
+@inject AppData appData
+
+
+<h4>Entrer votre code</h4>
+<EditForm Model="@codeModel" OnValidSubmit="@SetUser">
+
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+
+    <InputText id="code" @bind-Value="codeModel.Code" class="mt-2" /> 
+    <br />
+    <span  class="text-danger">@error</span>
+    <br />
+    <button type="submit" class="btn btn-primary">Confirmer</button>
+
+</EditForm>
+
+@code {
+    private string error = "";
+    private DisplayCodeModel codeModel = new();
+
+    private async Task SetUser()
+    {
+        var user = await _db.GetUser(codeModel.Code);
+        if (user is not null)
+        {
+            appData.SetUser(user);
+            error = "";
+        }
+        else
+        {
+            error = "Le code est invalide";
+        }
+    }
+}

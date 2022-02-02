@@ -2,7 +2,7 @@
 
 namespace M5Blz.Models
 {
-    public class DisplayUserModel
+    public class DisplayUserModel : DisplayCodeModel
     {
         [Required]
         [StringLength(50, ErrorMessage = "Le prénom est trop long.")]
@@ -10,10 +10,6 @@ namespace M5Blz.Models
         [Required]
         [StringLength(50, ErrorMessage = "Le nom est trop long.")]
         public string LastName { get; set; }
-        [Required]
-        [MinLength(4, ErrorMessage = "Le code doit avoir 4 caractère.")]
-        [MaxLength(4, ErrorMessage = "Le code doit avoir 4 caractère.")]
-        public string Code { get; set; }
         [Required]
         public bool IsDM { get; set; }
     }

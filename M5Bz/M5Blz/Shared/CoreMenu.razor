@@ -1,0 +1,42 @@
+﻿@using DataAccessLibrary.Models
+@using M5Blz.Services
+@inject AppData appData
+@implements IDisposable
+
+
+@if (appData?.Id is not 0)
+{
+    <span class="float-end">
+        Tu es sur la page top-menu => 
+        @appData.FirstName 
+        @appData.LastName 
+        <span @onclick="Deconnexion" class="oi oi-account-logout float-end mx-2"></span>
+    </span>
+}
+else
+{
+    <span class="float-end">
+        Tu es sur la page top-menu => 
+    </span>
+
+}
+<br />
+<hr />
+
+@code {
+
+    private void Deconnexion()
+    {
+        appData.SetUser(new UserModel());
+    }
+    
+    protected override void OnInitialized()
+    {
+        appData.OnChange += StateHasChanged;
+    }
+    
+    public void Dispose()
+    {
+        appData.OnChange -= StateHasChanged;
+    }
+}
