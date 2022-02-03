@@ -1,0 +1,451 @@
+﻿++Solution 'M5Bz' ‎(2 of 2 projects)
+i:{00000000-0000-0000-0000-000000000000}:M5Bz.sln
+++DataAccessLibrary
+i:{00000000-0000-0000-0000-000000000000}:DataAccessLibrary
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:c:\users\orwin\onedrive\documents\github\vampm5bz\m5bz\dataaccesslibrary\dataaccesslibrary.csproj
+++Dependencies
+i:{162add1e-4793-450e-bdc7-65f51f62279d}:>249
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:>421
+++Model
+++CampaignModel.cs
+i:{162add1e-4793-450e-bdc7-65f51f62279d}:c:\users\orwin\onedrive\documents\github\vampm5bz\m5bz\dataaccesslibrary\models\campaignmodel.cs
+++CampaignData.cs
+i:{162add1e-4793-450e-bdc7-65f51f62279d}:c:\users\orwin\onedrive\documents\github\vampm5bz\m5bz\dataaccesslibrary\campaigndata.cs
+++ISqlDataAccess.cs
+i:{162add1e-4793-450e-bdc7-65f51f62279d}:c:\users\orwin\onedrive\documents\github\vampm5bz\m5bz\dataaccesslibrary\isqldataaccess.cs
+++SqlDataAccess.cs
+i:{162add1e-4793-450e-bdc7-65f51f62279d}:c:\users\orwin\onedrive\documents\github\vampm5bz\m5bz\dataaccesslibrary\sqldataaccess.cs
+++Analyzers
+i:{162add1e-4793-450e-bdc7-65f51f62279d}:analyzers
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:analyzers
+++Frameworks
+i:{162add1e-4793-450e-bdc7-65f51f62279d}:frameworks
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:frameworks
+++Packages
+i:{162add1e-4793-450e-bdc7-65f51f62279d}:packages
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:packages
+++Microsoft.CodeAnalysis.CSharp.NetAnalyzers
+i:{162add1e-4793-450e-bdc7-65f51f62279d}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
+++Microsoft.CodeAnalysis.NetAnalyzers
+i:{162add1e-4793-450e-bdc7-65f51f62279d}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
+++System.Text.Json.SourceGeneration
+i:{162add1e-4793-450e-bdc7-65f51f62279d}:c:\program files\dotnet\packs\microsoft.netcore.app.ref\6.0.0\analyzers\dotnet\cs\system.text.json.sourcegeneration.dll
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:c:\program files\dotnet\packs\microsoft.netcore.app.ref\6.0.0\analyzers\dotnet\cs\system.text.json.sourcegeneration.dll
+++Microsoft.NETCore.App
+i:{162add1e-4793-450e-bdc7-65f51f62279d}:c:\users\orwin\onedrive\documents\github\vampm5bz\m5bz\dataaccesslibrary\microsoft.netcore.app
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:c:\users\orwin\onedrive\documents\github\vampm5bz\m5bz\m5blz\microsoft.netcore.app
+++Dapper (2.0.123)
+i:{162add1e-4793-450e-bdc7-65f51f62279d}:>431
+++Microsoft.Extensions.Configuration.Abstractions (6.0.0)
+i:{162add1e-4793-450e-bdc7-65f51f62279d}:>430
+++System.Data.SqlClient (4.8.3)
+i:{162add1e-4793-450e-bdc7-65f51f62279d}:>432
+++M5Blz
+i:{00000000-0000-0000-0000-000000000000}:M5Blz
+++Connected Services 
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:>422
+++Properties
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:c:\users\orwin\onedrive\documents\github\vampm5bz\m5bz\m5blz\properties\
+++launchSettings.json
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:c:\users\orwin\onedrive\documents\github\vampm5bz\m5bz\m5blz\properties\launchsettings.json
+++serviceDependencies.json
+++wwwroot
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:c:\users\orwin\onedrive\documents\github\vampm5bz\m5bz\m5blz\wwwroot\
+++Areas
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:c:\users\orwin\onedrive\documents\github\vampm5bz\m5bz\m5blz\areas\
+++Identity
+++Pages
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:c:\users\orwin\onedrive\documents\github\vampm5bz\m5bz\m5blz\pages\
+++Account
+++LogOut.cshtml
+++Shared
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:c:\users\orwin\onedrive\documents\github\vampm5bz\m5bz\m5blz\shared\
+++_LoginPartial.cshtml
+++RevalidatingIdentityAuthenticationStateProvider.cs
+++Data
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:c:\users\orwin\onedrive\documents\github\vampm5bz\m5bz\m5blz\data\
+++Migrations
+++00000000000000_CreateIdentitySchema.cs
+++ApplicationDbContextModelSnapshot.cs
+++ApplicationDbContext.cs
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:c:\users\orwin\onedrive\documents\github\vampm5bz\m5bz\m5blz\data\applicationdbcontext.cs
+++WeatherForecast.cs
+++WeatherForecastService.cs
+++_Host.cshtml
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:c:\users\orwin\onedrive\documents\github\vampm5bz\m5bz\m5blz\pages\_host.cshtml
+++_Layout.cshtml
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:c:\users\orwin\onedrive\documents\github\vampm5bz\m5bz\m5blz\pages\_layout.cshtml
+++Counter.razor
+++Error.cshtml
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:c:\users\orwin\onedrive\documents\github\vampm5bz\m5bz\m5blz\pages\error.cshtml
+++FetchData.razor
+++Index.razor
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:c:\users\orwin\onedrive\documents\github\vampm5bz\m5bz\m5blz\pages\index.razor
+++LoginDisplay.razor
+++MainLayout.razor
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:c:\users\orwin\onedrive\documents\github\vampm5bz\m5bz\m5blz\shared\mainlayout.razor
+++NavMenu.razor
+++_Imports.razor
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:c:\users\orwin\onedrive\documents\github\vampm5bz\m5bz\m5blz\_imports.razor
+++App.razor
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:c:\users\orwin\onedrive\documents\github\vampm5bz\m5bz\m5blz\app.razor
+++appsettings.json
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:c:\users\orwin\onedrive\documents\github\vampm5bz\m5bz\m5blz\appsettings.json
+++Program.cs
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:c:\users\orwin\onedrive\documents\github\vampm5bz\m5bz\m5blz\program.cs
+++SQL Server Express LocalDB (Local) (ConnectionStrings:DefaultConnection)
+++serviceDependencies.local.json
+++css
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:c:\users\orwin\onedrive\documents\github\vampm5bz\m5bz\m5blz\wwwroot\css\
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:c:\users\orwin\onedrive\documents\github\vampm5bz\m5bz\m5blz\wwwroot\css\open-iconic\font\css\
+++favicon.ico
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:c:\users\orwin\onedrive\documents\github\vampm5bz\m5bz\m5blz\wwwroot\favicon.ico
+++00000000000000_CreateIdentitySchema.Designer.cs
+++Error.cshtml.cs
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:c:\users\orwin\onedrive\documents\github\vampm5bz\m5bz\m5blz\pages\error.cshtml.cs
+++MainLayout.razor.css
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:c:\users\orwin\onedrive\documents\github\vampm5bz\m5bz\m5blz\shared\mainlayout.razor.css
+++NavMenu.razor.css
+++appsettings.Development.json
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:c:\users\orwin\onedrive\documents\github\vampm5bz\m5bz\m5blz\appsettings.development.json
+++Microsoft.AspNetCore.Analyzers
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.analyzers.dll
+++Microsoft.AspNetCore.App.Analyzers
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.0\analyzers\dotnet\cs\microsoft.aspnetcore.app.analyzers.dll
+++Microsoft.AspNetCore.App.CodeFixes
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.0\analyzers\dotnet\cs\microsoft.aspnetcore.app.codefixes.dll
+++Microsoft.AspNetCore.Components.Analyzers
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.components.analyzers.dll
+++Microsoft.AspNetCore.Mvc.Analyzers
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.mvc.analyzers.dll
+++Microsoft.AspNetCore.Razor.Internal.SourceGenerator.Transport
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk.razor\source-generators\microsoft.aspnetcore.razor.internal.sourcegenerator.transport.dll
+++Microsoft.EntityFrameworkCore.Analyzers
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:c:\users\orwin\.nuget\packages\microsoft.entityframeworkcore.analyzers\6.0.0\analyzers\dotnet\cs\microsoft.entityframeworkcore.analyzers.dll
+++Microsoft.Extensions.Logging.Generators
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.0\analyzers\dotnet\roslyn4.0\cs\microsoft.extensions.logging.generators.dll
+++Microsoft.NET.Sdk.Razor.SourceGenerators
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk.razor\source-generators\microsoft.net.sdk.razor.sourcegenerators.dll
+++Microsoft.AspNetCore.App
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:c:\users\orwin\onedrive\documents\github\vampm5bz\m5bz\m5blz\microsoft.aspnetcore.app
+++Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore (6.0.0)
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:>444
+++Microsoft.AspNetCore.Identity.EntityFrameworkCore (6.0.0)
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:>445
+++Microsoft.AspNetCore.Identity.UI (6.0.0)
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:>447
+++Microsoft.EntityFrameworkCore.SqlServer (6.0.0)
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:>443
+++Microsoft.EntityFrameworkCore.Tools (6.0.0)
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:>446
+++bootstrap
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:c:\users\orwin\onedrive\documents\github\vampm5bz\m5bz\m5blz\wwwroot\css\bootstrap\
+++open-iconic
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:c:\users\orwin\onedrive\documents\github\vampm5bz\m5bz\m5blz\wwwroot\css\open-iconic\
+++site.css
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:c:\users\orwin\onedrive\documents\github\vampm5bz\m5bz\m5blz\wwwroot\css\site.css
+++bootstrap.min.css
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:c:\users\orwin\onedrive\documents\github\vampm5bz\m5bz\m5blz\wwwroot\css\bootstrap\bootstrap.min.css
+++font
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:c:\users\orwin\onedrive\documents\github\vampm5bz\m5bz\m5blz\wwwroot\css\open-iconic\font\
+++FONT-LICENSE
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:c:\users\orwin\onedrive\documents\github\vampm5bz\m5bz\m5blz\wwwroot\css\open-iconic\font-license
+++ICON-LICENSE
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:c:\users\orwin\onedrive\documents\github\vampm5bz\m5bz\m5blz\wwwroot\css\open-iconic\icon-license
+++README.md
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:c:\users\orwin\onedrive\documents\github\vampm5bz\m5bz\m5blz\wwwroot\css\open-iconic\readme.md
+++bootstrap.min.css.map
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:c:\users\orwin\onedrive\documents\github\vampm5bz\m5bz\m5blz\wwwroot\css\bootstrap\bootstrap.min.css.map
+++fonts
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:c:\users\orwin\onedrive\documents\github\vampm5bz\m5bz\m5blz\wwwroot\css\open-iconic\font\fonts\
+++open-iconic-bootstrap.min.css
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:c:\users\orwin\onedrive\documents\github\vampm5bz\m5bz\m5blz\wwwroot\css\open-iconic\font\css\open-iconic-bootstrap.min.css
+++open-iconic.eot
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:c:\users\orwin\onedrive\documents\github\vampm5bz\m5bz\m5blz\wwwroot\css\open-iconic\font\fonts\open-iconic.eot
+++open-iconic.otf
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:c:\users\orwin\onedrive\documents\github\vampm5bz\m5bz\m5blz\wwwroot\css\open-iconic\font\fonts\open-iconic.otf
+++open-iconic.svg
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:c:\users\orwin\onedrive\documents\github\vampm5bz\m5bz\m5blz\wwwroot\css\open-iconic\font\fonts\open-iconic.svg
+++open-iconic.ttf
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:c:\users\orwin\onedrive\documents\github\vampm5bz\m5bz\m5blz\wwwroot\css\open-iconic\font\fonts\open-iconic.ttf
+++open-iconic.woff
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:c:\users\orwin\onedrive\documents\github\vampm5bz\m5bz\m5blz\wwwroot\css\open-iconic\font\fonts\open-iconic.woff
+++Secrets.json (Local)
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:>466
+++Secrets.json (Local) dependency is detected
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:>467
+++SignalR
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:>464
+++Your application is making use of SignalR. For environments that need to scale we strongly recommend adding a dependency on Azure SignalR Service.
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:>465
+++ICampaignData.cs
+i:{162add1e-4793-450e-bdc7-65f51f62279d}:c:\users\orwin\onedrive\documents\github\vampm5bz\m5bz\dataaccesslibrary\icampaigndata.cs
+++bin
+++Debug
+++net6.0
+++ref
+++runtimes
+++Humanizer.dll
+++M5Blz.deps.json
+++M5Blz.dll
+++M5Blz.exe
+++M5Blz.pdb
+++M5Blz.runtimeconfig.json
+++M5Blz.staticwebassets.runtime.json
+++Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll
+++Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+++Microsoft.AspNetCore.Identity.UI.dll
+++Microsoft.Data.SqlClient.dll
+++Microsoft.EntityFrameworkCore.Abstractions.dll
+++Microsoft.EntityFrameworkCore.Design.dll
+++Microsoft.EntityFrameworkCore.dll
+++Microsoft.EntityFrameworkCore.Relational.dll
+++Microsoft.EntityFrameworkCore.SqlServer.dll
+++Microsoft.Identity.Client.dll
+++Microsoft.IdentityModel.JsonWebTokens.dll
+++Microsoft.IdentityModel.Logging.dll
+++Microsoft.IdentityModel.Protocols.dll
+++Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+++Microsoft.IdentityModel.Tokens.dll
+++Microsoft.Win32.SystemEvents.dll
+++System.Configuration.ConfigurationManager.dll
+++System.Drawing.Common.dll
+++System.IdentityModel.Tokens.Jwt.dll
+++System.Runtime.Caching.dll
+++System.Security.Cryptography.ProtectedData.dll
+++System.Security.Permissions.dll
+++System.Windows.Extensions.dll
+++unix
+++win
+++win-arm
+++win-arm64
+++win-x64
+++win-x86
+++lib
+++native
+++netcoreapp3.0
+++netcoreapp3.1
+++netstandard2.0
+++Microsoft.Data.SqlClient.SNI.dll
+++obj
+++M5Blz.csproj.nuget.dgspec.json
+++M5Blz.csproj.nuget.g.props
+++M5Blz.csproj.nuget.g.targets
+++project.assets.json
+++project.nuget.cache
+++staticwebassets.pack.sentinel
+++scopedcss
+++staticwebassets
+++.NETCoreApp,Version=v6.0.AssemblyAttributes.cs
+++apphost.exe
+++M5Blz.AssemblyInfo.cs
+++M5Blz.AssemblyInfoInputs.cache
+++M5Blz.assets.cache
+++M5Blz.csproj.AssemblyReference.cache
+++M5Blz.csproj.CopyComplete
+++M5Blz.csproj.CoreCompileInputs.cache
+++M5Blz.csproj.FileListAbsolute.txt
+++M5Blz.GeneratedMSBuildEditorConfig.editorconfig
+++M5Blz.genruntimeconfig.cache
+++M5Blz.GlobalUsings.g.cs
+++M5Blz.MvcApplicationPartsAssemblyInfo.cache
+++M5Blz.MvcApplicationPartsAssemblyInfo.cs
+++M5Blz.RazorAssemblyInfo.cache
+++M5Blz.RazorAssemblyInfo.cs
+++project.razor.json
+++staticwebassets.build.json
+++staticwebassets.development.json
+++bundle
+++projectbundle
+++M5Blz.styles.css
+++M5Blz.bundle.scp.css
+++MainLayout.razor.rz.scp.css
+++NavMenu.razor.rz.scp.css
+++serviceDependencies.local.json.user
+++Imports
+++Sdk.props
+++Sdk.targets
+++Sdk.props (C:\Program Files\dotnet\sdk\6.0.100\Sdks\Microsoft.NET.Sdk\Sdk)
+++Sdk.props (C:\Program Files\dotnet\sdk\6.0.100\Sdks\Microsoft.NET.Sdk.Razor\Sdk)
+++Sdk.props (C:\Program Files\dotnet\sdk\6.0.100\Sdks\Microsoft.NET.Sdk.Web.ProjectSystem\Sdk)
+++Sdk.props (C:\Program Files\dotnet\sdk\6.0.100\Sdks\Microsoft.NET.Sdk.Publish\Sdk)
+++Sdk.targets (C:\Program Files\dotnet\sdk\6.0.100\Sdks\Microsoft.NET.Sdk\Sdk)
+++Sdk.targets (C:\Program Files\dotnet\sdk\6.0.100\Sdks\Microsoft.NET.Sdk.Razor\Sdk)
+++Sdk.targets (C:\Program Files\dotnet\sdk\6.0.100\Sdks\Microsoft.NET.Sdk.Web.ProjectSystem\Sdk)
+++Sdk.targets (C:\Program Files\dotnet\sdk\6.0.100\Sdks\Microsoft.NET.Sdk.Publish\Sdk)
+++Microsoft.Common.props
+++Microsoft.NET.Sdk.props
+++Sdk.Razor.CurrentVersion.props
+++Microsoft.NET.Sdk.Web.ProjectSystem.props
+++Microsoft.NET.Sdk.Publish.props
+++Microsoft.NET.Sdk.BeforeCommon.targets
+++Microsoft.CSharp.targets
+++Microsoft.NET.Sdk.targets
+++Microsoft.NET.Compatibility.targets
+++NuGet.Build.Tasks.Pack.targets
+++Sdk.Razor.CurrentVersion.targets
+++Microsoft.NET.Sdk.Web.ProjectSystem.targets
+++Microsoft.NET.Sdk.Publish.targets
+++Microsoft.NuGet.ImportBefore.props
+++NuGet.props
+++Microsoft.NET.Sdk.DefaultItems.props
+++Microsoft.NET.Sdk.ImportWorkloads.props
+++Microsoft.NET.SupportedTargetFrameworks.props
+++Microsoft.NET.SupportedPlatforms.props
+++Microsoft.NET.WindowsSdkSupportedTargetPlatforms.props
+++Microsoft.NET.Sdk.CSharp.props
+++Microsoft.NET.ILLink.props
+++Microsoft.NET.Compatibility.props
+++Microsoft.NET.PackTool.props
+++Microsoft.NET.PackProjectTool.props
+++Microsoft.NET.Sdk.WindowsDesktop.props
+++Microsoft.NET.Windows.props
+++Sdk.Razor.StaticAssets.ProjectSystem.props
+++Microsoft.TypeScript.Default.props
+++Microsoft.NET.Sdk.Web.DefaultItems.props
+++Microsoft.NET.DefaultAssemblyInfo.targets
+++Microsoft.NET.DefaultOutputPaths.targets
+++Microsoft.NET.Sdk.ImportPublishProfile.targets
+++Microsoft.NET.TargetFrameworkInference.targets
+++Microsoft.NET.Sdk.Razor.BeforeCommon.targets
+++Microsoft.NET.Sdk.ImportWorkloads.targets
+++Microsoft.NET.RuntimeIdentifierInference.targets
+++Microsoft.NET.EolTargetFrameworks.targets
+++Microsoft.NET.NuGetOfflineCache.targets
+++Microsoft.Managed.Before.targets
+++Microsoft.CSharp.CurrentVersion.targets
+++Microsoft.Managed.After.targets
+++Microsoft.NET.Sdk.Common.targets
+++Microsoft.PackageDependencyResolution.targets
+++Microsoft.NET.Sdk.DefaultItems.targets
+++Microsoft.NET.Sdk.FrameworkReferenceResolution.targets
+++Microsoft.NET.Sdk.Shared.targets
+++Microsoft.NET.DisableStandardFrameworkResolution.targets
+++Microsoft.NET.DesignerSupport.targets
+++Microsoft.NET.GenerateAssemblyInfo.targets
+++Microsoft.NET.GenerateGlobalUsings.targets
+++Microsoft.NET.GenerateSupportedRuntime.targets
+++Microsoft.NET.ComposeStore.targets
+++Microsoft.NET.CrossGen.targets
+++Microsoft.NET.ObsoleteReferences.targets
+++Microsoft.NET.Publish.targets
+++Microsoft.NET.PackTool.targets
+++Microsoft.NET.PackProjectTool.targets
+++Microsoft.NET.PreserveCompilationContext.targets
+++Microsoft.NET.ConflictResolution.targets
+++Microsoft.NET.Sdk.CSharp.targets
+++Microsoft.NET.ILLink.targets
+++Microsoft.NET.Sdk.Analyzers.targets
+++Microsoft.NET.Compatibility.Common.targets
+++Microsoft.NET.Sdk.Razor.Configuration.targets
+++Microsoft.NET.Sdk.Razor.CodeGeneration.targets
+++Microsoft.NET.Sdk.Razor.SourceGenerators.targets
+++Microsoft.NET.Sdk.Razor.StaticWebAssets.targets
+++Microsoft.NET.Sdk.Razor.ScopedCss.targets
+++Microsoft.NET.Sdk.Razor.JSModules.targets
+++Microsoft.NET.Sdk.Razor.GenerateAssemblyInfo.targets
+++Microsoft.NET.Sdk.Razor.MvcApplicationPartsDiscovery.targets
+++Microsoft.NET.Sdk.Razor.DesignTime.targets
+++Microsoft.TypeScript.targets
+++Microsoft.TypeScript.DotNetCore.targets
+++Microsoft.Web.Designtime.targets
+++Default.pubxml
+++Microsoft.NET.Sdk.Publish.ComputeFiles.targets
+++Microsoft.NET.Sdk.Publish.FilterFiles.targets
+++Microsoft.NET.Sdk.Publish.CopyFiles.targets
+++Microsoft.NET.Sdk.Publish.TransformFiles.targets
+++Microsoft.NET.Sdk.Publish.FileSystem.targets
+++Microsoft.NET.Sdk.DotNetCLITool.targets
+++Microsoft.EntityFrameworkCore.Design.props
+++Microsoft.AspNetCore.Identity.UI.props
+++Microsoft.NuGet.props
+++Microsoft.NETCoreSdk.BundledVersions.props
+++Microsoft.NET.Sdk.WindowsDesktop.WindowsForms.props
+++Microsoft.NET.Sdk.WindowsDesktop.WPF.props
+++WorkloadManifest.targets (C:\Program Files\dotnet\sdk-manifests\6.0.100\microsoft.net.sdk.android)
+++WorkloadManifest.targets (C:\Program Files\dotnet\sdk-manifests\6.0.100\microsoft.net.sdk.ios)
+++WorkloadManifest.targets (C:\Program Files\dotnet\sdk-manifests\6.0.100\microsoft.net.sdk.maccatalyst)
+++WorkloadManifest.targets (C:\Program Files\dotnet\sdk-manifests\6.0.100\microsoft.net.sdk.macos)
+++WorkloadManifest.targets (C:\Program Files\dotnet\sdk-manifests\6.0.100\microsoft.net.sdk.maui)
+++WorkloadManifest.targets (C:\Program Files\dotnet\sdk-manifests\6.0.100\microsoft.net.sdk.tvos)
+++WorkloadManifest.targets (C:\Program Files\dotnet\sdk-manifests\6.0.100\microsoft.net.workload.emscripten)
+++WorkloadManifest.targets (C:\Program Files\dotnet\sdk-manifests\6.0.100\microsoft.net.workload.mono.toolchain)
+++Microsoft.CSharp.Core.targets
+++Microsoft.CSharp.DesignTime.targets
+++Microsoft.Common.targets
+++Microsoft.ServiceModel.targets
+++Microsoft.NET.Sdk.DefaultItems.Shared.targets
+++Microsoft.NETCoreSdk.BundledCliTools.props
+++Microsoft.NET.DefaultPackageConflictOverrides.targets
+++Microsoft.CodeAnalysis.NetAnalyzers.props
+++Microsoft.CodeAnalysis.NetAnalyzers.targets
+++04.03.05.00.props
+++Microsoft.NET.ILLink.Tasks.props
+++System.Windows.Forms.Analyzers.props
+++Microsoft.Managed.Core.targets
+++Microsoft.Managed.DesignTime.targets
+++Microsoft.Common.CurrentVersion.targets
+++Microsoft.Managed.Core.CurrentVersions.targets
+++Microsoft.NET.props
+++Microsoft.CodeAnalysis.targets
+++Microsoft.Xaml.targets
+++Microsoft.WorkflowBuildExtensions.targets
+++Microsoft.TeamTest.targets
+++NuGet.targets
+++Microsoft.Docker.ImportAfter.targets
+++Microsoft.NET.Build.Extensions.targets
+++Microsoft.NuGet.ImportAfter.targets
+++Microsoft.Web.ImportAfter.targets
+++Microsoft.AspNetCore.Identity.UI.targets
+++Microsoft.Docker.targets
+++Microsoft.Web.IISSupport.targets
+++Microsoft.AspNetCore.StaticWebAssets.targets
+++Microsoft.AspNetCore.StaticWebAssets.V5.targets
+++Projects
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:projects
+++SQL Server Database (ConnectionStrings:DefaultConnection)
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:>620
+++SQL Server Database dependency with connectionId 'ConnectionStrings:DefaultConnection' is detected
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:>621
+++NewFolder
+++Core
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:c:\users\orwin\onedrive\documents\github\vampm5bz\m5bz\m5blz\pages\core\
+++UserModel.cs
+i:{162add1e-4793-450e-bdc7-65f51f62279d}:c:\users\orwin\onedrive\documents\github\vampm5bz\m5bz\dataaccesslibrary\models\usermodel.cs
+++UserData.cs
+i:{162add1e-4793-450e-bdc7-65f51f62279d}:c:\users\orwin\onedrive\documents\github\vampm5bz\m5bz\dataaccesslibrary\userdata.cs
+++User.razor
+++Models
+i:{162add1e-4793-450e-bdc7-65f51f62279d}:c:\users\orwin\onedrive\documents\github\vampm5bz\m5bz\dataaccesslibrary\models\
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:c:\users\orwin\onedrive\documents\github\vampm5bz\m5bz\m5blz\models\
+++IUserData.cs
+i:{162add1e-4793-450e-bdc7-65f51f62279d}:c:\users\orwin\onedrive\documents\github\vampm5bz\m5bz\dataaccesslibrary\iuserdata.cs
+++Users.razor
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:c:\users\orwin\onedrive\documents\github\vampm5bz\m5bz\m5blz\pages\core\users.razor
+++DataAccessLibrary.csproj.nuget.dgspec.json
+++DataAccessLibrary.csproj.nuget.g.props
+++DataAccessLibrary.csproj.nuget.g.targets
+++DataAccessLibrary.AssemblyInfo.cs
+++DataAccessLibrary.AssemblyInfoInputs.cache
+++DataAccessLibrary.assets.cache
+++DataAccessLibrary.csproj.AssemblyReference.cache
+++DataAccessLibrary.csproj.CoreCompileInputs.cache
+++DataAccessLibrary.csproj.FileListAbsolute.txt
+++DataAccessLibrary.dll
+++DataAccessLibrary.GeneratedMSBuildEditorConfig.editorconfig
+++DataAccessLibrary.GlobalUsings.g.cs
+++DataAccessLibrary.pdb
+++DataAccessLibrary.deps.json
+++DisplayUserModel.cs
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:c:\users\orwin\onedrive\documents\github\vampm5bz\m5bz\m5blz\models\displayusermodel.cs
+++AppData.cs
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:c:\users\orwin\onedrive\documents\github\vampm5bz\m5bz\m5blz\services\appdata.cs
+++Services
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:c:\users\orwin\onedrive\documents\github\vampm5bz\m5bz\m5blz\services\
+++DisplayCodeModel.cs
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:c:\users\orwin\onedrive\documents\github\vampm5bz\m5bz\m5blz\models\displaycodemodel.cs
+++NavItem.cs
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:c:\users\orwin\onedrive\documents\github\vampm5bz\m5bz\m5blz\models\navitem.cs
+++Header.razor

@@ -1,0 +1,45 @@
+﻿@using DataAccessLibrary.Models
+@using M5Blz.Services
+@inject AppData appData
+@inject NavigationManager NavManager
+@implements IDisposable
+
+
+<a href="/" class="oi oi-home mt-4 fs-4"></a>  
+
+@if (appData?.Id is not 0)
+{
+    <span class="float-end mt-4">
+        @appData.FirstName 
+        @appData.LastName 
+        <span @onclick="Deconnexion" class="oi oi-account-logout float-end mx-2"></span> 
+    </span>
+}
+else
+{
+    <span class="float-end mt-4">
+        Identification requise ...
+    </span>
+}
+
+<br />
+<hr />
+
+@code {
+
+    private void Deconnexion()
+    {
+        appData.SetUser(new UserModel());
+        NavManager.NavigateTo("/");
+    }
+    
+    protected override void OnInitialized()
+    {
+        appData.OnChange += StateHasChanged;
+    }
+    
+    public void Dispose()
+    {
+        appData.OnChange -= StateHasChanged;
+    }
+}

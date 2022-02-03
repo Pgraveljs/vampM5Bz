@@ -54,7 +54,6 @@ C:\Users\orwin\OneDrive\Documents\GitHub\vampM5Bz\M5Bz\M5Blz\obj\Debug\net6.0\M5
 C:\Users\orwin\OneDrive\Documents\GitHub\vampM5Bz\M5Bz\M5Blz\obj\Debug\net6.0\staticwebassets.build.json
 C:\Users\orwin\OneDrive\Documents\GitHub\vampM5Bz\M5Bz\M5Blz\obj\Debug\net6.0\staticwebassets.development.json
 C:\Users\orwin\OneDrive\Documents\GitHub\vampM5Bz\M5Bz\M5Blz\obj\Debug\net6.0\scopedcss\Shared\MainLayout.razor.rz.scp.css
-C:\Users\orwin\OneDrive\Documents\GitHub\vampM5Bz\M5Bz\M5Blz\obj\Debug\net6.0\scopedcss\Shared\NavMenu.razor.rz.scp.css
 C:\Users\orwin\OneDrive\Documents\GitHub\vampM5Bz\M5Bz\M5Blz\obj\Debug\net6.0\scopedcss\bundle\M5Blz.styles.css
 C:\Users\orwin\OneDrive\Documents\GitHub\vampM5Bz\M5Bz\M5Blz\obj\Debug\net6.0\scopedcss\projectbundle\M5Blz.bundle.scp.css
 C:\Users\orwin\OneDrive\Documents\GitHub\vampM5Bz\M5Bz\M5Blz\obj\Debug\net6.0\M5Blz.csproj.CopyComplete

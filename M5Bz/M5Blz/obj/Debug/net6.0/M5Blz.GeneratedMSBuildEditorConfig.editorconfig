@@ -19,12 +19,20 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/orwin/OneDrive/Documents/GitHub/vampM5Bz/M5Bz/M5Blz/Pages/Core/Identification.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29yZVxJZGVudGlmaWNhdGlvbi5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/orwin/OneDrive/Documents/GitHub/vampM5Bz/M5Bz/M5Blz/Pages/Core/Users.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29yZVxVc2Vycy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/orwin/OneDrive/Documents/GitHub/vampM5Bz/M5Bz/M5Blz/Pages/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/orwin/OneDrive/Documents/GitHub/vampM5Bz/M5Bz/M5Blz/Shared/CoreMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENvcmVNZW51LnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/orwin/OneDrive/Documents/GitHub/vampM5Bz/M5Bz/M5Blz/_Imports.razor]
@@ -34,10 +42,6 @@ build_metadata.AdditionalFiles.CssScope =
 [C:/Users/orwin/OneDrive/Documents/GitHub/vampM5Bz/M5Bz/M5Blz/Shared/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-qo3p3qmmyb
-
-[C:/Users/orwin/OneDrive/Documents/GitHub/vampM5Bz/M5Bz/M5Blz/Shared/NavMenu.razor]
-build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
-build_metadata.AdditionalFiles.CssScope = b-adjc21yzfb
 
 [C:/Users/orwin/OneDrive/Documents/GitHub/vampM5Bz/M5Bz/M5Blz/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s

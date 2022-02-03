@@ -1,6 +1,65 @@
 ﻿@page "/"
 
-<PageTitle>Index</PageTitle>
+@using DataAccessLibrary
+@using DataAccessLibrary.Models
+@using M5Blz.Models
+@using M5Blz.Services
+@using M5Blz.Pages.Core
 
-<h1>Start!</h1>
+@inject IUserData _db
+@inject AppData appData
 
+@inject NavigationManager nav
+
+@implements IDisposable
+
+<h1>Tu es sur la page index => @appData.FirstName</h1>
+<div class="container">
+    <div class="row mt-5">
+        @if (appData?.Id is 0 or null)
+        {
+            <Identification></Identification>
+        }
+        else
+        {
+
+            <div class="col text-center ">
+                <div class="row">
+
+                    <div class="col-md-3 offset-md-3">
+                        @if (appData.IsDM)
+                        {
+                            <div class="card">
+                                <a href="/Core/Users" class="oi oi-people fs-1"></a>
+                                <div class="card-body">
+                                    <h5 class="card-title"><a href="/Users"> Gérer les utilisateur</a></h5>
+                                </div>
+                            </div>
+                        }
+                    </div>
+                    <div class="col-md-3">
+
+                        <div class="card">
+                            <a href="/Core/Users" class="oi oi-spreadsheet fs-1"></a>
+                            <div class="card-body">
+                                <h5 class="card-title"><a href="/Users"> Gestion des campagnes</a></h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        }
+
+    </div>
+</div>
+@code {
+    protected override void OnInitialized()
+    {
+        appData.OnChange += StateHasChanged;
+    }
+    public void Dispose()
+    {
+        appData.OnChange -= StateHasChanged;
+    }
+}
