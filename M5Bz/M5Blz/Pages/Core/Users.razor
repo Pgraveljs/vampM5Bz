@@ -7,9 +7,7 @@
 @inject Services.AppData appData
 @if(appData.IsDM == true)
 {
-    <a href="/" class="oi oi-home float-end mx-2 fs-4"></a>  
-    <br />
-    <hr />
+    
 
     <h1>Utilisateurs</h1>
 
@@ -61,7 +59,7 @@
 }
 else
 {
-    <div>Retour à l'acceuil <a href="/" class="oi oi-home float-end mx-2 fs-4"></a> </div>
+    <div>Retour à l'acceuil ... </div>
 }
 @code {
     private List<UserModel> users;

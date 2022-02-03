@@ -7,17 +7,22 @@
 @inject AppData appData
 
 
-<h4>Entrer votre code</h4>
-<EditForm Model="@codeModel" OnValidSubmit="@SetUser">
+<EditForm Model="@codeModel" OnValidSubmit="@SetUser" class="row">
 
-    <DataAnnotationsValidator />
-    <ValidationSummary />
+    <div class="col-md-4 offset-md-4">
+        
+        <DataAnnotationsValidator />
+        <ValidationSummary />
+        <ul class="validation-errors">
+            <li class="validation-message">@error</li>
+        </ul>
 
-    <InputText id="code" @bind-Value="codeModel.Code" class="mt-2" /> 
-    <br />
-    <span  class="text-danger">@error</span>
-    <br />
-    <button type="submit" class="btn btn-primary">Confirmer</button>
+    </div>
+
+    <div class="col-md-4 offset-md-4 text-center ">
+        <InputText type="password" id="code" @bind-Value="codeModel.Code" class="mt-2 form-control" placeholder="Entrer votre code ..." />
+        <br />
+    </div>
 
 </EditForm>
 
@@ -35,7 +40,7 @@
         }
         else
         {
-            error = "Le code est invalide";
+            error = "Le code est invalide.";
         }
     }
 }
