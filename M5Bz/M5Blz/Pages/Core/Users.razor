@@ -5,27 +5,54 @@
 
 @inject IUserData _db
 @inject Services.AppData appData
-@if(appData.IsDM == true)
+@if (appData.IsDM == true)
 {
-    
+
 
     <h1>Utilisateurs</h1>
-
+    <br />
     <h4>Ajouter un utilisateur</h4>
-    <EditForm Model="@newUser" OnValidSubmit="@InsertUser">
-        <DataAnnotationsValidator />
-        <ValidationSummary />
-    
-        <InputText id="firstName" @bind-Value="newUser.FirstName" />
-        <InputText id="lastName" @bind-Value="newUser.LastName" />
-        <InputText id="code" @bind-Value="newUser.Code" />
-        <InputCheckbox id="isDM" @bind-Value="newUser.IsDM" />
 
-        <button type="submit" class="btn btn-primary">Ajouter</button>
+    <div class="row">
+        <div class="col-md-3">
 
-    </EditForm>
-                    <br />
-                    <hr />
+            <EditForm Model="@newUser" OnValidSubmit="@InsertUser" class="form-control">
+                <DataAnnotationsValidator />
+                <ValidationSummary />   
+
+                <div class="form-group">
+                    <label class="form-label mt-2" for="firstname">Prénom</label>
+                    <InputText @bind-Value="newUser.FirstName" class="form-control" id="firstname" />
+                    @*<ValidationMessage For="newUser.FirstName" />*@
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label mt-2" for="lastname">Nom</label>
+                    <InputText @bind-Value="newUser.LastName" class="form-control" id="lastname" />
+                    @*<ValidationMessage For="newUser.LastName" />*@
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label mt-2" for="code">Code</label>
+                    <InputText @bind-Value="newUser.Code" class="form-control" id="code" />
+                    @*<ValidationMessage For="newUser.Code" />*@
+                </div>
+
+                <div class="form-group">
+                    <InputCheckbox @bind-Value="newUser.IsDM" class="form-check-input mt-2" id="isDM" />
+                    <label class="form-check-label mt-2" for="isDM">Est un maître de jeux</label>
+                    @*<ValidationMessage For="newUser.IsDM" />*@
+                </div>
+
+
+                <button type="submit" class="btn btn-primary mt-2">Ajouter</button>
+
+            </EditForm>
+        </div>
+    </div>
+
+    <br />
+    <hr />
     <h4>Liste des utilisateurs</h4>
 
     @if (users is null)
@@ -44,7 +71,7 @@
                 </tr>
             </thead>
             <tbody>
-                @foreach(var user in users)
+                @foreach (var user in users)
                 {
                     <tr>
                         <td>@user.FirstName</td>
@@ -63,7 +90,7 @@ else
 }
 @code {
     private List<UserModel> users;
-    private DisplayUserModel newUser = new ();
+    private DisplayUserModel newUser = new();
 
     protected override async Task OnInitializedAsync()
     {
@@ -72,13 +99,13 @@ else
 
     private async Task InsertUser()
     {
-        UserModel model = new ()
-        {
-            FirstName = newUser.FirstName,
-            LastName = newUser.LastName,
-            Code = newUser.Code,
-            IsDM = newUser.IsDM
-        };
+        UserModel model = new()
+            {
+                FirstName = newUser.FirstName,
+                LastName = newUser.LastName,
+                Code = newUser.Code,
+                IsDM = newUser.IsDM
+            };
         await _db.InsertUser(model);
         users.Add(model);
     }

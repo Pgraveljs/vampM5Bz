@@ -9,7 +9,7 @@
 
 <EditForm Model="@codeModel" OnValidSubmit="@SetUser" class="row">
 
-    <div class="col-md-4 offset-md-4">
+    <div class="col-md-12">
         
         <DataAnnotationsValidator />
         <ValidationSummary />
@@ -19,16 +19,31 @@
 
     </div>
 
-    <div class="col-md-4 offset-md-4 text-center ">
-        <InputText type="password" id="code" @bind-Value="codeModel.Code" class="mt-2 form-control" placeholder="Entrer votre code ..." />
+    <div class="col-md-12 text-center ">
+        <InputText type="password" id="code" @bind-Value="codeModel.Code" class="go-away mt-2 form-control" placeholder="Entrer votre code ..." @onmouseover="Move" />
+        @*<InputText type="password" id="code" @bind-Value="codeModel.Code" class="go-away mt-2 form-control" placeholder="Entrer votre code ..." @onmouseover="Move" />*@
         <br />
     </div>
 
 </EditForm>
 
+<style type="text/css">
+    .go-away{
+        width:300px !important;
+        margin-top:@(moveTopValue)px !important;
+        margin-left:@(moveRightValue)px !important;
+        margin-right:@(moveLeftValue)px !important;
+    }
+
+</style>
+
 @code {
     private string error = "";
+    private int moveTopValue = 0;
+    private int moveRightValue = 0;
+    private int moveLeftValue = 0;
     private DisplayCodeModel codeModel = new();
+    private Random random = new Random();
 
     private async Task SetUser()
     {
@@ -42,5 +57,31 @@
         {
             error = "Le code est invalide.";
         }
+    }
+
+    private void Move()
+    {
+        var randomBool = random.Next(2) == 1;
+        if(randomBool)
+        {
+            moveTopValue =  moveTopValue - 55;
+            if (moveTopValue < 0) moveTopValue = 55;
+            if (moveTopValue > 250) moveTopValue = 200;
+
+            moveRightValue =  moveRightValue - 55;
+            if (moveRightValue < 0) moveRightValue = 200;
+            if (moveRightValue > 250) moveRightValue = 0;
+
+            moveLeftValue =  moveLeftValue - 55;
+            if (moveLeftValue < 0) moveLeftValue = 200;
+            if (moveLeftValue > 250) moveLeftValue = 0;
+        }
+        else
+        {
+            moveTopValue = moveTopValue + 55;
+            moveRightValue = moveRightValue + 55;
+            moveLeftValue = moveLeftValue + 55;
+        }
+        
     }
 }
