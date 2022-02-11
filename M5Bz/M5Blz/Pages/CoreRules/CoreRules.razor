@@ -1,0 +1,34 @@
+﻿@page "/CoreRules"
+@using DataAccessLibrary
+@using DataAccessLibrary.Models
+@inject ICoreRulesData _db
+@inject IJSRuntime JsRuntime
+
+<h3>CoreRules</h3>
+
+
+
+<div class="d-flex justify-content-center bd-highlight mb-3">
+
+   <h1>ID : @selectedId</h1>
+        @foreach (var coreRule in coreRules)
+        {
+                       
+            <div @onclick="() => CoreRulesSelected(coreRule.Id)" class="p-2 bd-highlight">@coreRule.Name</div>
+           
+        }
+          </div>
+@code {
+    private List<CoreRulesModel> coreRules = new ();
+    private int selectedId = 0;
+    protected override async Task OnInitializedAsync()
+    {
+        coreRules = await _db.GetCoreRules();
+    }
+
+    private void CoreRulesSelected(int id)
+    {
+        selectedId = id;
+    }
+
+}

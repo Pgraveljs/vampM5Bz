@@ -5,96 +5,97 @@
 
 @inject IUserData _db
 @inject Services.AppData appData
-@if (appData.IsDM == true)
-{
+@inject NavigationManager NavManager
+
+<h1>Utilisateurs</h1>
+<br />
+<h4>Ajouter un utilisateur</h4>
+
+<div class="row">
+    <div class="col-md-3">
+
+        <EditForm Model="@newUser" OnInvalidSubmit="@InsertUser" class="form-control">
+            <DataAnnotationsValidator />
+            <ValidationSummary />
+
+            <div class="form-group">
+                <label class="form-label mt-2" for="firstname">Prénom</label>
+                <InputText @bind-Value="newUser.FirstName" class="form-control" id="firstname" />
+                @*<ValidationMessage For="newUser.FirstName" />*@
+            </div>
+
+            <div class="form-group">
+                <label class="form-label mt-2" for="lastname">Nom</label>
+                <InputText @bind-Value="newUser.LastName" class="form-control" id="lastname" />
+                @*<ValidationMessage For="newUser.LastName" />*@
+            </div>
+
+            <div class="form-group">
+                <label class="form-label mt-2" for="code">Code</label>
+                <InputText @bind-Value="newUser.Code" class="form-control" id="code" />
+                @*<ValidationMessage For="newUser.Code" />*@
+            </div>
+
+            <div class="form-group">
+                <InputCheckbox @bind-Value="newUser.IsDM" class="form-check-input mt-2" id="isDM" />
+                <label class="form-check-label mt-2" for="isDM">Est un maître de jeux</label>
+                @*<ValidationMessage For="newUser.IsDM" />*@
+            </div>
 
 
-    <h1>Utilisateurs</h1>
-    <br />
-    <h4>Ajouter un utilisateur</h4>
+            <button type="submit" class="btn btn-primary mt-2">Ajouter</button>
 
-    <div class="row">
-        <div class="col-md-3">
-
-            <EditForm Model="@newUser" OnValidSubmit="@InsertUser" class="form-control">
-                <DataAnnotationsValidator />
-                <ValidationSummary />   
-
-                <div class="form-group">
-                    <label class="form-label mt-2" for="firstname">Prénom</label>
-                    <InputText @bind-Value="newUser.FirstName" class="form-control" id="firstname" />
-                    @*<ValidationMessage For="newUser.FirstName" />*@
-                </div>
-
-                <div class="form-group">
-                    <label class="form-label mt-2" for="lastname">Nom</label>
-                    <InputText @bind-Value="newUser.LastName" class="form-control" id="lastname" />
-                    @*<ValidationMessage For="newUser.LastName" />*@
-                </div>
-
-                <div class="form-group">
-                    <label class="form-label mt-2" for="code">Code</label>
-                    <InputText @bind-Value="newUser.Code" class="form-control" id="code" />
-                    @*<ValidationMessage For="newUser.Code" />*@
-                </div>
-
-                <div class="form-group">
-                    <InputCheckbox @bind-Value="newUser.IsDM" class="form-check-input mt-2" id="isDM" />
-                    <label class="form-check-label mt-2" for="isDM">Est un maître de jeux</label>
-                    @*<ValidationMessage For="newUser.IsDM" />*@
-                </div>
-
-
-                <button type="submit" class="btn btn-primary mt-2">Ajouter</button>
-
-            </EditForm>
-        </div>
+        </EditForm>
     </div>
+</div>
 
-    <br />
-    <hr />
-    <h4>Liste des utilisateurs</h4>
+<br />
+<hr />
+<h4>Liste des utilisateurs</h4>
 
     @if (users is null)
-    {
-        <p><em>Loading...</em></p>
-    }
-    else
-    {
-        <table class="table table-striped">
-            <thead>
-                <tr>
-                    <th>Prénom</th>
-                    <th>Nom</th>
-                    <th>Code</th>
-                    <th>Maître de jeu</th>
-                </tr>
-            </thead>
-            <tbody>
-                @foreach (var user in users)
-                {
-                    <tr>
-                        <td>@user.FirstName</td>
-                        <td>@user.LastName</td>
-                        <td>@user.Code</td>
-                        <td><span class="@(user.IsDM == true ? "oi oi-circle-check" : "")" aria-hidden="true"></span></td>
-                    </tr>
-                }
-            </tbody>
-        </table>
-    }
+{
+    <p><em>Loading...</em></p>
 }
 else
 {
-    <div>Retour à l'acceuil ... </div>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Prénom</th>
+                <th>Nom</th>
+                <th>Code</th>
+                <th>Maître de jeu</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var user in users)
+            {
+                <tr>
+                    <td>@user.FirstName</td>
+                    <td>@user.LastName</td>
+                    <td>@user.Code</td>
+                    <td><span class="@(user.IsDM == true ? "oi oi-circle-check" : "")" aria-hidden="true"></span></td>
+                </tr>
+            }
+        </tbody>
+    </table>
 }
 @code {
     private List<UserModel> users;
     private DisplayUserModel newUser = new();
-
+        
     protected override async Task OnInitializedAsync()
     {
-        users = await _db.GetUsers();
+        if (!appData.IsDM)
+        {
+            NavManager.NavigateTo("/");
+        }
+        else
+        {
+            users = await _db.GetUsers();
+        }
+
     }
 
     private async Task InsertUser()
