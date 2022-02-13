@@ -1,8 +1,24 @@
 @import url('open-iconic/font/css/open-iconic-bootstrap.min.css');
-
+:root {
+    --main: #1B1B1E;
+    --second: #468189;
+    --t1: #E98A15;
+    --t2: #887880;
+    --t3: #F9E9EC;
+}
 html, body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    /*background-color: var(--main);*/
+    /*color: var(--second);*/
 }
+
+/*.card {
+    background-color: var(--main);
+    border: 1px solid var(--second);
+}
+a {
+    color: var(--t1);
+}*/
 
 #blazor-error-ui {
     background: lightyellow;

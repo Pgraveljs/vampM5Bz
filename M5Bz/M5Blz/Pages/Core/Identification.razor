@@ -1,30 +1,29 @@
-﻿@using DataAccessLibrary
-@using DataAccessLibrary.Models
-@using M5Blz.Models
-@using M5Blz.Services
-
-@inject IUserData _db
+﻿@inject IUserData _db
 @inject AppData appData
 
 
 <EditForm Model="@codeModel" OnValidSubmit="@SetUser" class="row">
 
-    <div class="col-md-4 offset-md-4">
-        
-        <DataAnnotationsValidator />
-        <ValidationSummary />
-        <ul class="validation-errors">
-            <li class="validation-message">@error</li>
-        </ul>
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+    <ul class="validation-errors">
+        <li class="validation-message">@error</li>
+    </ul>
+    <div class="d-flex justify-content-center">
+
+            <img src="/icons/rpg-game.png" alt="Image" height="150">
+            <div class="pt-5 text-start">
+                <h4 class="fw-bold">Entrer votre code Héros</h4>
+            <InputText  type="password" id="code" @bind-Value="codeModel.Code" class="form-control" placeholder="Code a 4 digits ..." />
+
+
+            </div>
 
     </div>
 
-    <div class="col-md-4 offset-md-4 text-center ">
-        <InputText type="password" id="code" @bind-Value="codeModel.Code" class="mt-2 form-control" placeholder="Entrer votre code ..." />
-        <br />
-    </div>
 
 </EditForm>
+
 
 @code {
     private string error = "";
@@ -43,4 +42,6 @@
             error = "Le code est invalide.";
         }
     }
+
+
 }

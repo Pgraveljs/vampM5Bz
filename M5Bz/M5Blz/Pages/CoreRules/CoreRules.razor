@@ -1,0 +1,41 @@
+﻿@page "/CoreRules"
+@inject ICoreRulesData _db
+
+<div class="text-center">
+    <h2>Selectionner le système de règles de la campagne</h2>
+</div>
+
+<div class="d-flex justify-content-center">
+
+
+    @foreach (var coreRule in coreRules)
+    {
+
+        <div @onclick="() => CoreRulesSelected(coreRule.Id)" class="border border-5 m-2 p-2">
+
+            <img class="border border-3" src="@(coreRule.IconPath)" alt="Image" height="100">
+            <span class="fw-bold">@coreRule.Name</span>
+        </div>
+
+    }
+</div>
+
+
+<h1>ID : @appData.SelectedCoreRules</h1>
+
+
+
+
+@code {
+    private List<CoreRulesModel> coreRules = new();
+    protected override async Task OnInitializedAsync()
+    {
+        coreRules = await _db.GetCoreRules();
+    }
+
+    private void CoreRulesSelected(int id)
+    {
+        appData.SelectedCoreRules = id;
+    }
+
+}
