@@ -1,18 +1,15 @@
-﻿@using DataAccessLibrary.Models
-@using M5Blz.Services
-@inject AppData appData
-@inject NavigationManager NavManager
-@implements IDisposable
+﻿@implements IDisposable
+<a href="/">
+    <img src="/icons/victorian-house.png" alt="Image" height="55">
+</a>
 
-
-<a href="/" class="oi oi-home mt-4 fs-4"></a>  
 
 @if (appData?.Id is not 0)
 {
     <span class="float-end mt-4">
-        @appData.FirstName 
-        @appData.LastName 
-        <span @onclick="Deconnexion" class="oi oi-account-logout float-end mx-2"></span> 
+        @appData.FirstName
+        @appData.LastName
+        <img @onclick="Deconnexion" src="/icons/le-crane.png" alt="Image" height="25">
     </span>
 }
 else
@@ -21,7 +18,6 @@ else
         Identification requise ...
     </span>
 }
-
 <br />
 <hr />
 
@@ -32,12 +28,12 @@ else
         appData.SetUser(new UserModel());
         NavManager.NavigateTo("/");
     }
-    
+
     protected override void OnInitialized()
     {
         appData.OnChange += StateHasChanged;
     }
-    
+
     public void Dispose()
     {
         appData.OnChange -= StateHasChanged;
