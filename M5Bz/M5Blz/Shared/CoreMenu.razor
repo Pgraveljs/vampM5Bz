@@ -3,18 +3,18 @@
 
 @foreach (var item in appData.NavItems)
 {
-    <a href="@item.Href" class="float-start">
+    <a href="@item.Href" class="float-start mt-2">
         <img src="@item.Icon" alt="Image" height="40">
     </a>
     if(appData.NavItems.Count() > 1 && appData.NavItems.Last().Href != item.Href  )
     {
-        <h1 class="float-start mx-2"> / </h1>
+        <h1 class="float-start mx-2 mt-2"> / </h1>
     }
 }
 
 @if (appData?.Id is not 0)
 {
-    <span class="float-end mt-4">
+    <span class="float-end mt-3">
         @appData.FirstName
         @appData.LastName
         <img @onclick="Deconnexion" src="/icons/le-crane.png" alt="Image" height="25">
@@ -22,7 +22,7 @@
 }
 else
 {
-    <span class="float-end mt-4">
+    <span class="float-end mt-2">
         Identification requise ...
     </span>
 }
