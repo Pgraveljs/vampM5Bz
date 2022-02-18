@@ -1,8 +1,16 @@
 ﻿@implements IDisposable
-<a href="/">
-    <img src="/icons/victorian-house.png" alt="Image" height="55">
-</a>
 
+
+@foreach (var item in appData.NavItems)
+{
+    <a href="@item.Href" class="float-start">
+        <img src="@item.Icon" alt="Image" height="40">
+    </a>
+    if(appData.NavItems.Count() > 1 && appData.NavItems.Last().Href != item.Href  )
+    {
+        <h1 class="float-start mx-2"> / </h1>
+    }
+}
 
 @if (appData?.Id is not 0)
 {
@@ -19,10 +27,11 @@ else
     </span>
 }
 <br />
+<br />
 <hr />
 
 @code {
-
+    bool isFirst = true;
     private void Deconnexion()
     {
         appData.SetUser(new UserModel());

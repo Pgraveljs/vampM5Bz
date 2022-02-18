@@ -5,7 +5,6 @@ C:\Users\orwin\OneDrive\Documents\GitHub\vampM5Bz\M5Bz\M5Blz\bin\Debug\net6.0\M5
 C:\Users\orwin\OneDrive\Documents\GitHub\vampM5Bz\M5Bz\M5Blz\bin\Debug\net6.0\M5Blz.deps.json
 C:\Users\orwin\OneDrive\Documents\GitHub\vampM5Bz\M5Bz\M5Blz\bin\Debug\net6.0\M5Blz.runtimeconfig.json
 C:\Users\orwin\OneDrive\Documents\GitHub\vampM5Bz\M5Bz\M5Blz\bin\Debug\net6.0\M5Blz.dll
-C:\Users\orwin\OneDrive\Documents\GitHub\vampM5Bz\M5Bz\M5Blz\bin\Debug\net6.0\ref\M5Blz.dll
 C:\Users\orwin\OneDrive\Documents\GitHub\vampM5Bz\M5Bz\M5Blz\bin\Debug\net6.0\M5Blz.pdb
 C:\Users\orwin\OneDrive\Documents\GitHub\vampM5Bz\M5Bz\M5Blz\bin\Debug\net6.0\Humanizer.dll
 C:\Users\orwin\OneDrive\Documents\GitHub\vampM5Bz\M5Bz\M5Blz\bin\Debug\net6.0\Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll
@@ -71,3 +70,4 @@ C:\Users\orwin\OneDrive\Documents\GitHub\vampM5Bz\M5Bz\M5Blz\bin\Debug\net6.0\ru
 C:\Users\orwin\OneDrive\Documents\GitHub\vampM5Bz\M5Bz\M5Blz\bin\Debug\net6.0\DataAccessLibrary.dll
 C:\Users\orwin\OneDrive\Documents\GitHub\vampM5Bz\M5Bz\M5Blz\bin\Debug\net6.0\DataAccessLibrary.pdb
 C:\Users\orwin\OneDrive\Documents\GitHub\vampM5Bz\M5Bz\M5Blz\obj\Debug\net6.0\M5Blz.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\orwin\OneDrive\Documents\GitHub\vampM5Bz\M5Bz\M5Blz\obj\Debug\net6.0\refint\M5Blz.dll

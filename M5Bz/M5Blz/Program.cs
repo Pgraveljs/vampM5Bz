@@ -15,7 +15,7 @@ builder.Services.AddTransient<ISqlDataAccess, SqlDataAccess>();
 builder.Services.AddTransient<ICampaignData, CampaignData>();
 builder.Services.AddTransient<IUserData, UserData>();
 builder.Services.AddTransient<ICoreRulesData, CoreRulesData>();
-builder.Services.AddSingleton<AppData>();
+builder.Services.AddScoped<AppData>();
 
 var app = builder.Build();
 

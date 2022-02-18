@@ -1,5 +1,5 @@
 ﻿@inherits LayoutComponentBase
-
+@inject IJSRuntime JSRuntime
 <PageTitle>M5Blz</PageTitle>
 
 <div class="page">
@@ -11,3 +11,33 @@
         </article>
     </main>
 </div>
+
+
+@code {
+    protected override void OnInitialized()
+    {
+        NavManager.LocationChanged += DetectNavigation;
+    }
+
+    private void DetectNavigation(object sender, LocationChangedEventArgs e)
+    {
+        var path = e.Location.Remove(0, 22);
+
+        switch (path)
+        {
+            case "/":
+                appData.SetNavItems(new NavItem { Href = "/", Icon = "/icons/victorian-house.png" });
+                break;
+            case "/Users":
+                appData.SetNavItems(new NavItem { Href = "/Users", Icon = "/icons/team-management(1).png" });
+                break;
+            case "/CoreRules":
+                appData.SetNavItems(new NavItem { Href = "/CoreRules", Icon = "/icons/plan-daffaires.png" });
+                break;
+            case "/Campaign":
+                appData.SetNavItems(new NavItem { Href = "/Campaign", Icon = "/icons/drame.png" });
+                break;
+        };
+
+    }
+}

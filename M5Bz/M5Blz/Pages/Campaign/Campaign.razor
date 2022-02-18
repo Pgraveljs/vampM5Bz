@@ -1,10 +1,22 @@
 ﻿@page "/Campaign"
 
 
+<img src="/icons/drame.png" alt="Image" height="150">
 <h3>Bienvenue sur la page des campagnes</h3>
-<h5>Mais présentement il n'y a rien...</h5>
+ <div class="border border-5 m-2 p-2">
+    <img class="border border-3" src="@(appData.SelectedCoreRules.IconPath)" alt="Image" height="100">
+    <span class="fw-bold">@appData.SelectedCoreRules.Name</span>
+</div>
 
 
 @code {
+
+    protected override void OnInitialized()
+    {
+        if(appData.SelectedCoreRules.Id == 0)
+        {
+            NavManager.NavigateTo("/CoreRules");
+        }
+    }
 
 }
