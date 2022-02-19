@@ -1,4 +1,6 @@
 ﻿@page "/Users"
+@inject AppData _appData
+@inject NavigationManager _navigationManager
 
 @inject IUserData _db
 
@@ -82,9 +84,9 @@ else
         
     protected override async Task OnInitializedAsync()
     {
-        if (!appData.IsDM)
+        if (!_appData.IsDM)
         {
-            NavManager.NavigateTo("/");
+            _navigationManager.NavigateTo("/");
         }
         else
         {

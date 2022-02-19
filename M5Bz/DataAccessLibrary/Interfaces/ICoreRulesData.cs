@@ -1,6 +1,6 @@
 ﻿using DataAccessLibrary.Models;
 
-namespace DataAccessLibrary
+namespace DataAccessLibrary.Interfaces
 {
     public interface ICoreRulesData
     {

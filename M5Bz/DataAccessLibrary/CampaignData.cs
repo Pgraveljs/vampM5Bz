@@ -1,4 +1,5 @@
-﻿using DataAccessLibrary.Models;
+﻿using DataAccessLibrary.Interfaces;
+using DataAccessLibrary.Models;
 
 namespace DataAccessLibrary
 {
@@ -11,16 +12,16 @@ namespace DataAccessLibrary
             _db = db;
         }
 
-        public Task<List<CampaignModel>> GetCampaigns()
+        public Task<List<CampaignModel>> GetCampaigns(int userId, int coreRulesId)
         {
-            string sql = "select * from dbo.Campaign";
+            string sql = $"select * from dbo.Campaign where UserId = {userId} and CoreRulesId = {coreRulesId}";
             return _db.LoadData<CampaignModel, dynamic>(sql, new { });
         }
 
         public Task InsertCampaign(CampaignModel campaign)
         {
-            string sql = @"insert into dbo.Campaign (Name, CreationDate)
-                            value (@Name, @CreationDate);";
+            string sql = @"insert into dbo.Campaign (Name, CreationDate, CoreRulesId, UserId)
+                            value (@Name, @CreationDate, @CoreRulesId, @UserId);";
             return _db.SaveData(sql, campaign);
         }
     }

@@ -1,11 +1,8 @@
 ﻿@page "/"
-@using M5Blz.Pages.Core
-
 
 @inject IUserData _db
-@inject AppData appData
-
-@inject NavigationManager nav
+@inject AppData _appData
+@inject NavigationManager _navigationManager
 
 @implements IDisposable
 
@@ -14,39 +11,26 @@
         <div class="alert alert-info">
             <a href="https://www.flaticon.com/free-icons/team" title="team icons">Team icons created by juicy_fish - Flaticon</a>
         </div>
-        @if (appData?.Id is 0 or null)
+        @if (_appData?.Id is 0 or null)
         {
             <Identification></Identification>
         }
         else
         {
-
-            <div class="row">
-
-                <div class="col-md-3 offset-md-3">
-                    @if (appData.IsDM)
-                    {
-                        <div class="card">
-                            <a href="/Core/Users">
-                                <img src="/icons/team-management(1).png" alt="Image" height="150">
-                            </a>
-                            <div class="card-body">
-                                <h5 class="card-title"><a href="/Users"> Gérer les utilisateur</a></h5>
-                            </div>
-                        </div>
-                    }
-                </div>
-                <div class="col-md-3">
-
-                    <div class="card">
-                        <a href="/CoreRules">
-                            <img src="/icons/plan-daffaires.png" alt="Image" height="150">
-                        </a>
-                        <div class="card-body">
-                            <h5 class="card-title"><a href="/CoreRules"> Gestion des campagnes</a></h5>
-                        </div>
-                    </div>
-                </div>
+            <div class="d-flex justify-content-center">
+                @if (_appData.IsDM)
+                {
+                    <_ClickableBaseCard ConfirmationClick="OnCoreRulesClick"
+                                Id="0"
+                                Name="Gérer les utilisateur"
+                                IconPath="/icons/team-management(1).png">
+                    </_ClickableBaseCard>
+                }
+                <_ClickableBaseCard ConfirmationClick="OnCoreRulesClick"
+                                Id="1"
+                                Name="Gestion des campagnes"
+                                IconPath="/icons/plan-daffaires.png">
+                </_ClickableBaseCard>
             </div>
         }
     </div>
@@ -55,10 +39,23 @@
 @code {
     protected override void OnInitialized()
     {
-        appData.OnChange += StateHasChanged;
+        _appData.OnChange += StateHasChanged;
     }
     public void Dispose()
     {
-        appData.OnChange -= StateHasChanged;
+        _appData.OnChange -= StateHasChanged;
+    }
+
+    public async Task OnCoreRulesClick(int id)
+    {
+        switch (id)
+        {
+            case 0:
+                _navigationManager.NavigateTo("/Users");
+                break;
+            case 1:
+                _navigationManager.NavigateTo("/CoreRules");
+                break;
+        }
     }
 }

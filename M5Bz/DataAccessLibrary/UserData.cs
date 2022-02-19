@@ -1,4 +1,5 @@
-﻿using DataAccessLibrary.Models;
+﻿using DataAccessLibrary.Interfaces;
+using DataAccessLibrary.Models;
 
 
 namespace DataAccessLibrary

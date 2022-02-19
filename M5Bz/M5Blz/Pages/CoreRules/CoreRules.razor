@@ -1,5 +1,7 @@
 ﻿@page "/CoreRules"
 @inject ICoreRulesData _db
+@inject AppData _appData
+@inject NavigationManager _navigationManager
 
 <div class="text-center">
     <h2>Selectionner le système de règles de la campagne</h2>
@@ -8,13 +10,13 @@
 <div class="d-flex justify-content-center">
     @foreach (var coreRule in CoreRuleList)
     {
-        <div @onclick="() => CoreRulesSelected(coreRule)" class="border border-5 m-2 p-2">
-            <img class="border border-3" src="@(coreRule.IconPath)" alt="Image" height="100">
-            <span class="fw-bold">@coreRule.Name</span>
-        </div>
+        <_ClickableBaseCard ConfirmationClick="CoreRulesSelected"
+            Id="@coreRule.Id"
+            Name="@coreRule.Name"
+            IconPath="@coreRule.IconPath">
+        </_ClickableBaseCard>
     }
 </div>
-
 
 @code {
     private List<CoreRulesModel> CoreRuleList = new();
@@ -23,11 +25,9 @@
         CoreRuleList = await _db.GetCoreRules();
     }
 
-    private void CoreRulesSelected(CoreRulesModel coreRulesModel)
+    private void CoreRulesSelected(int id)
     {
-        appData.SelectedCoreRules = coreRulesModel;
-        
-        NavManager.NavigateTo("/Campaign");
+        _appData.SelectedCoreRules = CoreRuleList.First(x => x.Id == id);
+        _navigationManager.NavigateTo("/Campaign");
     }
-
 }

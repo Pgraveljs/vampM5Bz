@@ -1,4 +1,5 @@
 using DataAccessLibrary;
+using DataAccessLibrary.Interfaces;
 using M5Blz.Services;
 
 var builder = WebApplication.CreateBuilder(args);

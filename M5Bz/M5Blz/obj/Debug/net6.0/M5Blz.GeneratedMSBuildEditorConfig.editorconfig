@@ -23,16 +23,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2FtcGFpZ25cQ2FtcGFpZ24ucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/orwin/OneDrive/Documents/GitHub/vampM5Bz/M5Bz/M5Blz/Pages/Campaign/_CampaignEdit.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2FtcGFpZ25cX0NhbXBhaWduRWRpdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/orwin/OneDrive/Documents/GitHub/vampM5Bz/M5Bz/M5Blz/Pages/CoreRules/CoreRules.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29yZVJ1bGVzXENvcmVSdWxlcy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/orwin/OneDrive/Documents/GitHub/vampM5Bz/M5Bz/M5Blz/Pages/Core/Identification.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29yZVxJZGVudGlmaWNhdGlvbi5yYXpvcg==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/orwin/OneDrive/Documents/GitHub/vampM5Bz/M5Bz/M5Blz/Pages/Core/Lifecycle.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29yZVxMaWZlY3ljbGUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/orwin/OneDrive/Documents/GitHub/vampM5Bz/M5Bz/M5Blz/Pages/Core/Users.razor]
@@ -43,8 +43,12 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/orwin/OneDrive/Documents/GitHub/vampM5Bz/M5Bz/M5Blz/Shared/CoreMenu.razor]
-build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENvcmVNZW51LnJhem9y
+[C:/Users/orwin/OneDrive/Documents/GitHub/vampM5Bz/M5Bz/M5Blz/Shared/_ClickableBaseCard.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXF9DbGlja2FibGVCYXNlQ2FyZC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/orwin/OneDrive/Documents/GitHub/vampM5Bz/M5Bz/M5Blz/Shared/_CoreMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXF9Db3JlTWVudS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/orwin/OneDrive/Documents/GitHub/vampM5Bz/M5Bz/M5Blz/_Imports.razor]

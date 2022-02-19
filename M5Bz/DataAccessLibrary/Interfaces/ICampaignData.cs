@@ -1,10 +1,10 @@
 ﻿using DataAccessLibrary.Models;
 
-namespace DataAccessLibrary
+namespace DataAccessLibrary.Interfaces
 {
     public interface ICampaignData
     {
-        Task<List<CampaignModel>> GetCampaigns();
+        Task<List<CampaignModel>> GetCampaigns(int userID, int coreRulesID);
         Task InsertCampaign(CampaignModel campaign);
     }
 }

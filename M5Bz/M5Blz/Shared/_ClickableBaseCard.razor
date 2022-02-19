@@ -1,0 +1,24 @@
+﻿
+<div @onclick="() => OnConfirmationClick(Id)" class="border border-5 m-2 p-2 @(FloatEnd ? "float-end" : "")">
+    <img class="border border-3" src="@(IconPath)" alt="Image" height="100">
+    <span class="fw-bold">@Name</span>
+</div>
+
+@code {
+    [Parameter]
+    public string Name { get; set; }
+    [Parameter]
+    public string IconPath { get; set; }
+    [Parameter]
+    public int Id { get; set; }
+    [Parameter]
+    public bool FloatEnd { get; set; } = false;    
+    [Parameter]
+    public EventCallback<int> ConfirmationClick { get; set; }
+
+    
+    private async Task OnConfirmationClick(int id)
+    {
+        await ConfirmationClick.InvokeAsync(id);
+    }
+}

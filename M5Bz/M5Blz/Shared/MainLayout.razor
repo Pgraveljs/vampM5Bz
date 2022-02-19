@@ -1,12 +1,12 @@
 ﻿@inherits LayoutComponentBase
-@inject IJSRuntime JSRuntime
+@inject AppData _appData
+@inject NavigationManager _navigationManager
 <PageTitle>M5Blz</PageTitle>
 
 <div class="page">
     <main>
         <article class="content px-4">
-            
-            <CoreMenu></CoreMenu>
+            <_CoreMenu></_CoreMenu>
             @Body
         </article>
     </main>
@@ -16,7 +16,7 @@
 @code {
     protected override void OnInitialized()
     {
-        NavManager.LocationChanged += DetectNavigation;
+        _navigationManager.LocationChanged += DetectNavigation;
     }
 
     private void DetectNavigation(object sender, LocationChangedEventArgs e)
@@ -26,16 +26,16 @@
         switch (path)
         {
             case "/":
-                appData.SetNavItems(new NavItem { Href = "/", Icon = "/icons/victorian-house.png" });
+                _appData.SetNavItems(new NavItem { Href = "/", Icon = "/icons/victorian-house.png" });
                 break;
             case "/Users":
-                appData.SetNavItems(new NavItem { Href = "/Users", Icon = "/icons/team-management(1).png" });
+                _appData.SetNavItems(new NavItem { Href = "/Users", Icon = "/icons/team-management(1).png" });
                 break;
             case "/CoreRules":
-                appData.SetNavItems(new NavItem { Href = "/CoreRules", Icon = "/icons/plan-daffaires.png" });
+                _appData.SetNavItems(new NavItem { Href = "/CoreRules", Icon = "/icons/plan-daffaires.png" });
                 break;
             case "/Campaign":
-                appData.SetNavItems(new NavItem { Href = "/Campaign", Icon = "/icons/drame.png" });
+                _appData.SetNavItems(new NavItem { Href = "/Campaign", Icon = "/icons/drame.png" });
                 break;
         };
 

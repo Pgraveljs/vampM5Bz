@@ -1,22 +1,24 @@
 ﻿@implements IDisposable
 
+@inject AppData _appData
+@inject NavigationManager _navigationManager
 
-@foreach (var item in appData.NavItems)
+@foreach (var item in _appData.NavItems)
 {
     <a href="@item.Href" class="float-start mt-2">
         <img src="@item.Icon" alt="Image" height="40">
     </a>
-    if(appData.NavItems.Count() > 1 && appData.NavItems.Last().Href != item.Href  )
+    if(_appData.NavItems.Count() > 1 && _appData.NavItems.Last().Href != item.Href  )
     {
         <h1 class="float-start mx-2 mt-2"> / </h1>
     }
 }
 
-@if (appData?.Id is not 0)
+@if (_appData?.Id is not 0)
 {
     <span class="float-end mt-3">
-        @appData.FirstName
-        @appData.LastName
+        @_appData.FirstName
+        @_appData.LastName
         <img @onclick="Deconnexion" src="/icons/le-crane.png" alt="Image" height="25">
     </span>
 }
@@ -34,17 +36,17 @@ else
     bool isFirst = true;
     private void Deconnexion()
     {
-        appData.SetUser(new UserModel());
-        NavManager.NavigateTo("/");
+        _appData.SetUser(new UserModel());
+        _navigationManager.NavigateTo("/");
     }
 
     protected override void OnInitialized()
     {
-        appData.OnChange += StateHasChanged;
+        _appData.OnChange += StateHasChanged;
     }
 
     public void Dispose()
     {
-        appData.OnChange -= StateHasChanged;
+        _appData.OnChange -= StateHasChanged;
     }
 }

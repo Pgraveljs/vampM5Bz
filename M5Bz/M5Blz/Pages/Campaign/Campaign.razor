@@ -1,26 +1,78 @@
 ﻿@page "/Campaign"
+@inject AppData _appData
+@inject NavigationManager _navigationManager
+@inject ICampaignData _db
 
 <div class="d-flex  justify-content-between">
-     <div>
-        <img class="" src="/icons/drame.png" alt="Image" height="150">
-        <span  class="">Bienvenue sur la page des campagnes</span>
-</div>
+    <_ClickableBaseCard Name="Gestion des campagnes"
+                        IconPath="/icons/drame.png">
+    </_ClickableBaseCard>
 
-    <div class="border border-5 m-2 p-2 float-end">
-        <img class="border border-3" src="@(appData.SelectedCoreRules.IconPath)" alt="Image" height="100">
-        <span class="fw-bold">@appData.SelectedCoreRules.Name</span>
-    </div>
+    <_ClickableBaseCard Id="@(_appData.SelectedCoreRules.Id)"
+                        Name="@(_appData.SelectedCoreRules.Name)"
+                        IconPath="@(_appData.SelectedCoreRules.IconPath)"
+                        FloatEnd="true">
+    </_ClickableBaseCard>
+
 </div>
+<hr />
+
+@if (IsLoading)
+{
+    <div class="text-center">
+        <div class="spinner-border" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+    </div>
+}
+else
+{
+    if (!Campaigns.Any())
+    {
+        @*        <EditForm>
+            <div class="mb-3">
+            <h4>Ajouter une campagne</h4>
+            <label for="exampleInputEmail1" class="form-label">Nom</label>
+            <input type="text" class="form-control">
+            </div>
+            <button type="submit" class="btn btn-primary">Ajouter</button>
+            </EditForm>*@
+    }
+    else
+    {
+        <span>Afficher les campagnes</span>
+        <span>Afficher les campagnes</span>
+        <span>Afficher les campagnes</span>
+    }
+}
 
 
 @code {
-
+    private bool IsLoading { get; set; }
+    private List<CampaignModel> Campaigns { get; set; } = new();
+    private CampaignModel NewCampaign { get; set; } = new();
     protected override void OnInitialized()
     {
-        if (appData.SelectedCoreRules.Id == 0)
+        if (_appData.SelectedCoreRules.Id == 0)
         {
-            NavManager.NavigateTo("/CoreRules");
+            _navigationManager.NavigateTo("/CoreRules");
         }
+    }
+    protected override async Task OnAfterRenderAsync(bool fistRender)
+    {
+        if (fistRender)
+        {
+            await LoadCampaigns();
+        }
+    }
+
+    private async Task LoadCampaigns()
+    {
+        IsLoading = true;
+        StateHasChanged();
+        await _db.GetCampaigns(_appData.Id, _appData.SelectedCoreRules.Id);
+        IsLoading = false;
+        StateHasChanged();
     }
 
 }
