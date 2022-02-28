@@ -11,14 +11,15 @@
         <div class="alert alert-info">
             <a href="https://www.flaticon.com/free-icons/team" title="team icons">Team icons created by juicy_fish - Flaticon</a>
         </div>
-        @if (_appData?.Id is 0 or null)
+
+        @if (_appData?.SelectedUser?.Id is 0 or null)
         {
             <Identification></Identification>
         }
         else
         {
             <div class="d-flex justify-content-center">
-                @if (_appData.IsDM)
+                @if (_appData.SelectedUser.IsDM)
                 {
                     <_ClickableBaseCard ConfirmationClick="OnCoreRulesClick"
                                 Id="0"

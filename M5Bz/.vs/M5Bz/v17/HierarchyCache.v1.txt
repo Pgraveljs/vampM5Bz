@@ -1,0 +1,263 @@
+﻿++Solution 'M5Bz' ‎(2 of 2 projects)
+i:{00000000-0000-0000-0000-000000000000}:M5Bz.sln
+++DataAccessLibrary
+i:{00000000-0000-0000-0000-000000000000}:DataAccessLibrary
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:c:\users\orwin\onedrive\documents\github\vampm5bz\m5bz\dataaccesslibrary\bin\debug\net6.0\dataaccesslibrary.dll
+++Dependencies
+i:{162add1e-4793-450e-bdc7-65f51f62279d}:>2934
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:>3321
+++Interfaces
+i:{162add1e-4793-450e-bdc7-65f51f62279d}:c:\users\orwin\onedrive\documents\github\vampm5bz\m5bz\dataaccesslibrary\interfaces\
+++ICampaignData.cs
+i:{162add1e-4793-450e-bdc7-65f51f62279d}:c:\users\orwin\onedrive\documents\github\vampm5bz\m5bz\dataaccesslibrary\interfaces\icampaigndata.cs
+++ICoreRulesData.cs
+i:{162add1e-4793-450e-bdc7-65f51f62279d}:c:\users\orwin\onedrive\documents\github\vampm5bz\m5bz\dataaccesslibrary\interfaces\icorerulesdata.cs
+++ISqlDataAccess.cs
+i:{162add1e-4793-450e-bdc7-65f51f62279d}:c:\users\orwin\onedrive\documents\github\vampm5bz\m5bz\dataaccesslibrary\interfaces\isqldataaccess.cs
+++IUserData.cs
+i:{162add1e-4793-450e-bdc7-65f51f62279d}:c:\users\orwin\onedrive\documents\github\vampm5bz\m5bz\dataaccesslibrary\interfaces\iuserdata.cs
+++Models
+i:{162add1e-4793-450e-bdc7-65f51f62279d}:c:\users\orwin\onedrive\documents\github\vampm5bz\m5bz\dataaccesslibrary\models\
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:c:\users\orwin\onedrive\documents\github\vampm5bz\m5bz\m5blz\models\
+++CampaignModel.cs
+i:{162add1e-4793-450e-bdc7-65f51f62279d}:c:\users\orwin\onedrive\documents\github\vampm5bz\m5bz\dataaccesslibrary\models\campaignmodel.cs
+++CoreRulesModel.cs
+i:{162add1e-4793-450e-bdc7-65f51f62279d}:c:\users\orwin\onedrive\documents\github\vampm5bz\m5bz\dataaccesslibrary\models\corerulesmodel.cs
+++UserModel.cs
+i:{162add1e-4793-450e-bdc7-65f51f62279d}:c:\users\orwin\onedrive\documents\github\vampm5bz\m5bz\dataaccesslibrary\models\usermodel.cs
+++CampaignData.cs
+i:{162add1e-4793-450e-bdc7-65f51f62279d}:c:\users\orwin\onedrive\documents\github\vampm5bz\m5bz\dataaccesslibrary\campaigndata.cs
+++CoreRulesData.cs
+i:{162add1e-4793-450e-bdc7-65f51f62279d}:c:\users\orwin\onedrive\documents\github\vampm5bz\m5bz\dataaccesslibrary\corerulesdata.cs
+++SqlDataAccess.cs
+i:{162add1e-4793-450e-bdc7-65f51f62279d}:c:\users\orwin\onedrive\documents\github\vampm5bz\m5bz\dataaccesslibrary\sqldataaccess.cs
+++UserData.cs
+i:{162add1e-4793-450e-bdc7-65f51f62279d}:c:\users\orwin\onedrive\documents\github\vampm5bz\m5bz\dataaccesslibrary\userdata.cs
+++Analyzers
+i:{162add1e-4793-450e-bdc7-65f51f62279d}:analyzers
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:analyzers
+++Frameworks
+i:{162add1e-4793-450e-bdc7-65f51f62279d}:frameworks
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:frameworks
+++Packages
+i:{162add1e-4793-450e-bdc7-65f51f62279d}:packages
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:packages
+++Microsoft.CodeAnalysis.CSharp.NetAnalyzers
+i:{162add1e-4793-450e-bdc7-65f51f62279d}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
+++Microsoft.CodeAnalysis.NetAnalyzers
+i:{162add1e-4793-450e-bdc7-65f51f62279d}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
+++System.Text.Json.SourceGeneration
+i:{162add1e-4793-450e-bdc7-65f51f62279d}:c:\program files\dotnet\packs\microsoft.netcore.app.ref\6.0.2\analyzers\dotnet\cs\system.text.json.sourcegeneration.dll
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:c:\program files\dotnet\packs\microsoft.netcore.app.ref\6.0.2\analyzers\dotnet\cs\system.text.json.sourcegeneration.dll
+++Microsoft.NETCore.App
+i:{162add1e-4793-450e-bdc7-65f51f62279d}:c:\users\orwin\onedrive\documents\github\vampm5bz\m5bz\dataaccesslibrary\microsoft.netcore.app
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:c:\users\orwin\onedrive\documents\github\vampm5bz\m5bz\m5blz\microsoft.netcore.app
+++Dapper (2.0.123)
+i:{162add1e-4793-450e-bdc7-65f51f62279d}:>3346
+++Microsoft.Extensions.Configuration.Abstractions (6.0.0)
+i:{162add1e-4793-450e-bdc7-65f51f62279d}:>3343
+++System.Data.SqlClient (4.8.3)
+i:{162add1e-4793-450e-bdc7-65f51f62279d}:>3349
+++M5Blz
+i:{00000000-0000-0000-0000-000000000000}:M5Blz
+++Connected Services 
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:>3322
+++Properties
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:c:\users\orwin\onedrive\documents\github\vampm5bz\m5bz\m5blz\properties\
+++wwwroot
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:c:\users\orwin\onedrive\documents\github\vampm5bz\m5bz\m5blz\wwwroot\
+++css
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:c:\users\orwin\onedrive\documents\github\vampm5bz\m5bz\m5blz\wwwroot\css\
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:c:\users\orwin\onedrive\documents\github\vampm5bz\m5bz\m5blz\wwwroot\css\open-iconic\font\css\
+++icons
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:c:\users\orwin\onedrive\documents\github\vampm5bz\m5bz\m5blz\wwwroot\icons\
+++add.png
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:c:\users\orwin\onedrive\documents\github\vampm5bz\m5bz\m5blz\wwwroot\icons\add.png
+++book.png
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:c:\users\orwin\onedrive\documents\github\vampm5bz\m5bz\m5blz\wwwroot\icons\book.png
+++casino.png
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:c:\users\orwin\onedrive\documents\github\vampm5bz\m5bz\m5blz\wwwroot\icons\casino.png
+++catalogue.png
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:c:\users\orwin\onedrive\documents\github\vampm5bz\m5bz\m5blz\wwwroot\icons\catalogue.png
+++chauve-souris.png
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:c:\users\orwin\onedrive\documents\github\vampm5bz\m5bz\m5blz\wwwroot\icons\chauve-souris.png
+++contact-book (1).png
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:c:\users\orwin\onedrive\documents\github\vampm5bz\m5bz\m5blz\wwwroot\icons\contact-book (1).png
+++contact-book.png
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:c:\users\orwin\onedrive\documents\github\vampm5bz\m5bz\m5blz\wwwroot\icons\contact-book.png
+++contract.png
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:c:\users\orwin\onedrive\documents\github\vampm5bz\m5bz\m5blz\wwwroot\icons\contract.png
+++delete-file.png
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:c:\users\orwin\onedrive\documents\github\vampm5bz\m5bz\m5blz\wwwroot\icons\delete-file.png
+++document.png
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:c:\users\orwin\onedrive\documents\github\vampm5bz\m5bz\m5blz\wwwroot\icons\document.png
+++drame.png
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:c:\users\orwin\onedrive\documents\github\vampm5bz\m5bz\m5blz\wwwroot\icons\drame.png
+++goth.png
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:c:\users\orwin\onedrive\documents\github\vampm5bz\m5bz\m5blz\wwwroot\icons\goth.png
+++heart.png
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:c:\users\orwin\onedrive\documents\github\vampm5bz\m5bz\m5blz\wwwroot\icons\heart.png
+++interest-rate.png
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:c:\users\orwin\onedrive\documents\github\vampm5bz\m5bz\m5blz\wwwroot\icons\interest-rate.png
+++junk.png
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:c:\users\orwin\onedrive\documents\github\vampm5bz\m5bz\m5blz\wwwroot\icons\junk.png
+++le-crane.png
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:c:\users\orwin\onedrive\documents\github\vampm5bz\m5bz\m5blz\wwwroot\icons\le-crane.png
+++plan-daffaires.png
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:c:\users\orwin\onedrive\documents\github\vampm5bz\m5bz\m5blz\wwwroot\icons\plan-daffaires.png
+++poison.png
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:c:\users\orwin\onedrive\documents\github\vampm5bz\m5bz\m5blz\wwwroot\icons\poison.png
+++reject.png
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:c:\users\orwin\onedrive\documents\github\vampm5bz\m5bz\m5blz\wwwroot\icons\reject.png
+++remove.png
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:c:\users\orwin\onedrive\documents\github\vampm5bz\m5bz\m5blz\wwwroot\icons\remove.png
+++rpg-game.png
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:c:\users\orwin\onedrive\documents\github\vampm5bz\m5bz\m5blz\wwwroot\icons\rpg-game.png
+++team-management(1).png
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:c:\users\orwin\onedrive\documents\github\vampm5bz\m5bz\m5blz\wwwroot\icons\team-management(1).png
+++team-management(2).png
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:c:\users\orwin\onedrive\documents\github\vampm5bz\m5bz\m5blz\wwwroot\icons\team-management(2).png
+++team-management.png
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:c:\users\orwin\onedrive\documents\github\vampm5bz\m5bz\m5blz\wwwroot\icons\team-management.png
+++vampire.png
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:c:\users\orwin\onedrive\documents\github\vampm5bz\m5bz\m5blz\wwwroot\icons\vampire.png
+++victorian-house.png
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:c:\users\orwin\onedrive\documents\github\vampm5bz\m5bz\m5blz\wwwroot\icons\victorian-house.png
+++favicon.ico
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:c:\users\orwin\onedrive\documents\github\vampm5bz\m5bz\m5blz\wwwroot\favicon.ico
+++Areas
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:c:\users\orwin\onedrive\documents\github\vampm5bz\m5bz\m5blz\areas\
+++Data
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:c:\users\orwin\onedrive\documents\github\vampm5bz\m5bz\m5blz\data\
+++Enums
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:c:\users\orwin\onedrive\documents\github\vampm5bz\m5bz\m5blz\models\enums\
+++DisplayCodeModel.cs
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:c:\users\orwin\onedrive\documents\github\vampm5bz\m5bz\m5blz\models\displaycodemodel.cs
+++DisplayUserModel.cs
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:c:\users\orwin\onedrive\documents\github\vampm5bz\m5bz\m5blz\models\displayusermodel.cs
+++NavItem.cs
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:c:\users\orwin\onedrive\documents\github\vampm5bz\m5bz\m5blz\models\navitem.cs
+++Pages
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:c:\users\orwin\onedrive\documents\github\vampm5bz\m5bz\m5blz\pages\
+++Campaign
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:c:\users\orwin\onedrive\documents\github\vampm5bz\m5bz\m5blz\pages\campaign\
+++_CampaignEdit.razor
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:c:\users\orwin\onedrive\documents\github\vampm5bz\m5bz\m5blz\pages\campaign\_campaignedit.razor
+++Campaign.razor
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:c:\users\orwin\onedrive\documents\github\vampm5bz\m5bz\m5blz\pages\campaign\campaign.razor
+++Core
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:c:\users\orwin\onedrive\documents\github\vampm5bz\m5bz\m5blz\pages\core\
+++Identification.razor
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:c:\users\orwin\onedrive\documents\github\vampm5bz\m5bz\m5blz\pages\core\identification.razor
+++Users.razor
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:c:\users\orwin\onedrive\documents\github\vampm5bz\m5bz\m5blz\pages\core\users.razor
+++CoreRules
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:c:\users\orwin\onedrive\documents\github\vampm5bz\m5bz\m5blz\pages\corerules\
+++CoreRules.razor
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:c:\users\orwin\onedrive\documents\github\vampm5bz\m5bz\m5blz\pages\corerules\corerules.razor
+++_Host.cshtml
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:c:\users\orwin\onedrive\documents\github\vampm5bz\m5bz\m5blz\pages\_host.cshtml
+++_Layout.cshtml
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:c:\users\orwin\onedrive\documents\github\vampm5bz\m5bz\m5blz\pages\_layout.cshtml
+++Error.cshtml
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:c:\users\orwin\onedrive\documents\github\vampm5bz\m5bz\m5blz\pages\error.cshtml
+++Index.razor
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:c:\users\orwin\onedrive\documents\github\vampm5bz\m5bz\m5blz\pages\index.razor
+++Services
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:c:\users\orwin\onedrive\documents\github\vampm5bz\m5bz\m5blz\services\
+++AppData.cs
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:c:\users\orwin\onedrive\documents\github\vampm5bz\m5bz\m5blz\services\appdata.cs
+++Shared
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:c:\users\orwin\onedrive\documents\github\vampm5bz\m5bz\m5blz\shared\
+++_ClickableBaseCard.razor
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:c:\users\orwin\onedrive\documents\github\vampm5bz\m5bz\m5blz\shared\_clickablebasecard.razor
+++_CoreMenu.razor
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:c:\users\orwin\onedrive\documents\github\vampm5bz\m5bz\m5blz\shared\_coremenu.razor
+++MainLayout.razor
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:c:\users\orwin\onedrive\documents\github\vampm5bz\m5bz\m5blz\shared\mainlayout.razor
+++_Imports.razor
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:c:\users\orwin\onedrive\documents\github\vampm5bz\m5bz\m5blz\_imports.razor
+++App.razor
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:c:\users\orwin\onedrive\documents\github\vampm5bz\m5bz\m5blz\app.razor
+++appsettings.json
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:c:\users\orwin\onedrive\documents\github\vampm5bz\m5bz\m5blz\appsettings.json
+++Program.cs
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:c:\users\orwin\onedrive\documents\github\vampm5bz\m5bz\m5blz\program.cs
+++No service dependencies discovered
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:>3323
+++Projects
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:projects
+++launchSettings.json
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:c:\users\orwin\onedrive\documents\github\vampm5bz\m5bz\m5blz\properties\launchsettings.json
+++bootstrap
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:c:\users\orwin\onedrive\documents\github\vampm5bz\m5bz\m5blz\wwwroot\css\bootstrap\
+++open-iconic
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:c:\users\orwin\onedrive\documents\github\vampm5bz\m5bz\m5blz\wwwroot\css\open-iconic\
+++site.css
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:c:\users\orwin\onedrive\documents\github\vampm5bz\m5bz\m5blz\wwwroot\css\site.css
+++ApplicationDbContext.cs
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:c:\users\orwin\onedrive\documents\github\vampm5bz\m5bz\m5blz\data\applicationdbcontext.cs
+++Error.cshtml.cs
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:c:\users\orwin\onedrive\documents\github\vampm5bz\m5bz\m5blz\pages\error.cshtml.cs
+++MainLayout.razor.css
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:c:\users\orwin\onedrive\documents\github\vampm5bz\m5bz\m5blz\shared\mainlayout.razor.css
+++appsettings.Development.json
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:c:\users\orwin\onedrive\documents\github\vampm5bz\m5bz\m5blz\appsettings.development.json
+++Microsoft.AspNetCore.Analyzers
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.analyzers.dll
+++Microsoft.AspNetCore.App.Analyzers
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.2\analyzers\dotnet\cs\microsoft.aspnetcore.app.analyzers.dll
+++Microsoft.AspNetCore.App.CodeFixes
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.2\analyzers\dotnet\cs\microsoft.aspnetcore.app.codefixes.dll
+++Microsoft.AspNetCore.Components.Analyzers
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.components.analyzers.dll
+++Microsoft.AspNetCore.Mvc.Analyzers
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.mvc.analyzers.dll
+++Microsoft.AspNetCore.Razor.SourceGenerator.Tooling.Internal
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk.razor\source-generators\microsoft.aspnetcore.razor.sourcegenerator.tooling.internal.dll
+++Microsoft.EntityFrameworkCore.Analyzers
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:c:\users\orwin\.nuget\packages\microsoft.entityframeworkcore.analyzers\6.0.0\analyzers\dotnet\cs\microsoft.entityframeworkcore.analyzers.dll
+++Microsoft.Extensions.Logging.Generators
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.2\analyzers\dotnet\roslyn4.0\cs\microsoft.extensions.logging.generators.dll
+++Microsoft.NET.Sdk.Razor.SourceGenerators
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk.razor\source-generators\microsoft.net.sdk.razor.sourcegenerators.dll
+++Microsoft.AspNetCore.App
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:c:\users\orwin\onedrive\documents\github\vampm5bz\m5bz\m5blz\microsoft.aspnetcore.app
+++Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore (6.0.0)
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:>3352
+++Microsoft.AspNetCore.Identity.EntityFrameworkCore (6.0.0)
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:>3353
+++Microsoft.AspNetCore.Identity.UI (6.0.0)
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:>3355
+++Microsoft.EntityFrameworkCore.SqlServer (6.0.0)
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:>3351
+++Microsoft.EntityFrameworkCore.Tools (6.0.0)
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:>3354
+++bootstrap.min.css
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:c:\users\orwin\onedrive\documents\github\vampm5bz\m5bz\m5blz\wwwroot\css\bootstrap\bootstrap.min.css
+++font
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:c:\users\orwin\onedrive\documents\github\vampm5bz\m5bz\m5blz\wwwroot\css\open-iconic\font\
+++FONT-LICENSE
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:c:\users\orwin\onedrive\documents\github\vampm5bz\m5bz\m5blz\wwwroot\css\open-iconic\font-license
+++ICON-LICENSE
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:c:\users\orwin\onedrive\documents\github\vampm5bz\m5bz\m5blz\wwwroot\css\open-iconic\icon-license
+++README.md
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:c:\users\orwin\onedrive\documents\github\vampm5bz\m5bz\m5blz\wwwroot\css\open-iconic\readme.md
+++bootstrap.min.css.map
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:c:\users\orwin\onedrive\documents\github\vampm5bz\m5bz\m5blz\wwwroot\css\bootstrap\bootstrap.min.css.map
+++fonts
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:c:\users\orwin\onedrive\documents\github\vampm5bz\m5bz\m5blz\wwwroot\css\open-iconic\font\fonts\
+++open-iconic-bootstrap.min.css
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:c:\users\orwin\onedrive\documents\github\vampm5bz\m5bz\m5blz\wwwroot\css\open-iconic\font\css\open-iconic-bootstrap.min.css
+++open-iconic.eot
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:c:\users\orwin\onedrive\documents\github\vampm5bz\m5bz\m5blz\wwwroot\css\open-iconic\font\fonts\open-iconic.eot
+++open-iconic.otf
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:c:\users\orwin\onedrive\documents\github\vampm5bz\m5bz\m5blz\wwwroot\css\open-iconic\font\fonts\open-iconic.otf
+++open-iconic.svg
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:c:\users\orwin\onedrive\documents\github\vampm5bz\m5bz\m5blz\wwwroot\css\open-iconic\font\fonts\open-iconic.svg
+++open-iconic.ttf
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:c:\users\orwin\onedrive\documents\github\vampm5bz\m5bz\m5blz\wwwroot\css\open-iconic\font\fonts\open-iconic.ttf
+++open-iconic.woff
+i:{2b1c2a13-8b6f-43d6-b04b-513decfa3060}:c:\users\orwin\onedrive\documents\github\vampm5bz\m5bz\m5blz\wwwroot\css\open-iconic\font\fonts\open-iconic.woff

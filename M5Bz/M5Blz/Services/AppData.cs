@@ -5,14 +5,10 @@ namespace M5Blz.Services
 {
     public class AppData
     {
-
-        public int Id { get; set ; }
-        public string FirstName { get; set; }
-        public string LastName { get; set; }
-        public bool IsDM { get; set; }
-
+        public UserModel SelectedUser { get; set; } = new UserModel();
         //Contient le jeux utiliser
         public CoreRulesModel SelectedCoreRules { get; set; } = new CoreRulesModel();
+        public CampaignModel SelectedCampaign { get; set; } = new CampaignModel();
 
         //Liste pour le fil d'Ariane
         public List<NavItem> NavItems { get; set; } = new List<NavItem>();
@@ -22,32 +18,38 @@ namespace M5Blz.Services
             NavItems.Add(new NavItem { Href = "/", Icon = "/icons/victorian-house.png" });
         }
 
-
         public event Action OnChange;
 
         public void SetUser(UserModel user)
         {
-            Id = user.Id;
-            FirstName = user.FirstName;
-            LastName = user.LastName;
-            IsDM = user.IsDM;
-
-            NotifyStateChanged();
+            if (SelectedUser.Id != user.Id)
+            {
+                SelectedUser = user;
+                NotifyStateChanged();
+            }
         }
         public void SetCoreRules(CoreRulesModel selectedCoreRules)
         {
-            if (selectedCoreRules.Id != SelectedCoreRules.Id) 
+            if (selectedCoreRules.Id != SelectedCoreRules.Id)
             {
                 SelectedCoreRules = selectedCoreRules;
                 NotifyStateChanged();
             }
         }
-
-        public void SetNavItems(NavItem navItem) 
+        public void SetCampaign(CampaignModel selectedCampaign)
         {
-            if(NavItems.Any(x => x.Href == navItem.Href))
+            if (selectedCampaign.Id != SelectedCampaign.Id)
             {
-                for (int i = NavItems.Count - 1; i >=0 ; i--)
+                SelectedCampaign = selectedCampaign;
+                NotifyStateChanged();
+            }
+        }
+
+        public void SetNavItems(NavItem navItem)
+        {
+            if (NavItems.Any(x => x.Href == navItem.Href))
+            {
+                for (int i = NavItems.Count - 1; i >= 0; i--)
                 {
                     if (NavItems[i].Href != navItem.Href)
                         NavItems.RemoveAt(i);
@@ -55,7 +57,7 @@ namespace M5Blz.Services
                         break;
                 }
             }
-            else 
+            else
             {
                 NavItems.Add(navItem);
             }

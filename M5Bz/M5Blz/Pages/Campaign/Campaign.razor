@@ -27,25 +27,59 @@
 }
 else
 {
-    if (!Campaigns.Any())
-    {
-        @*        <EditForm>
-            <div class="mb-3">
-            <h4>Ajouter une campagne</h4>
-            <label for="exampleInputEmail1" class="form-label">Nom</label>
-            <input type="text" class="form-control">
+    <EditForm Model="NewCampaign" OnValidSubmit="UpsertCampaign">
+        <DataAnnotationsValidator />
+        <div class="d-flex">
+            <img src="/icons/book.png" alt="Image" height="100">
+            <div class="text-start ">
+                <div class="form-group p-2">
+                    <h4 class="fw-bold">Ajouter une nouvelle campagne</h4>
+                    <InputText @bind-Value="NewCampaign.Name" type="text" class="form-control" placeholder="Nom de la nouvelle campagne..."></InputText>
+                    <ValidationMessage For="()=>NewCampaign.Name" />
+                </div>
             </div>
-            <button type="submit" class="btn btn-primary">Ajouter</button>
-            </EditForm>*@
-    }
-    else
-    {
-        <span>Afficher les campagnes</span>
-        <span>Afficher les campagnes</span>
-        <span>Afficher les campagnes</span>
-    }
+        </div>
+    </EditForm>
+    <hr />
 }
 
+<table class="table table-striped">
+    <caption class="fs-2 caption-top">Liste des campagnes de @_appData.SelectedCoreRules.Name</caption>
+    <thead>
+        <tr>
+            <th scope="col">Nom</th>
+            <th scope="col">Date</th>
+            <th scope="col">Carnets de Notes</th>
+            @if (_appData.SelectedCoreRules.AllowsCharacterCreation)
+            {
+                <th scope="col">Personnages</th>
+            }
+            <th scope="col">Effacer la campagne</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var campaign in Campaigns)
+        {
+            <tr>
+                <td class="fw-bold">@campaign.Name</td>
+                <td>@campaign.CreationDate</td>
+                <td>
+                    <img src="/icons/contract.png" alt="Image" height="50" @onclick="() => OnSelectCampaignNotebook(campaign)">
+                </td>
+                @if (_appData.SelectedCoreRules.AllowsCharacterCreation)
+                {
+                    <td>
+                        <img src="/icons/contact-book.png" alt="Image" height="50">
+                    </td>
+                }
+                <td>
+                    <img class="border border-5 border-danger rounded p-1" src="/icons/delete-file.png" alt="Image" height="50">
+                </td>
+            </tr>
+        }
+
+    </tbody>
+</table>
 
 @code {
     private bool IsLoading { get; set; }
@@ -70,9 +104,39 @@ else
     {
         IsLoading = true;
         StateHasChanged();
-        await _db.GetCampaigns(_appData.Id, _appData.SelectedCoreRules.Id);
+        Campaigns = await _db.GetCampaigns(_appData.SelectedUser.Id, _appData.SelectedCoreRules.Id);
         IsLoading = false;
         StateHasChanged();
     }
 
+    private async Task UpsertCampaign()
+    {
+        NewCampaign.CoreRulesId = _appData.SelectedCoreRules.Id;
+        NewCampaign.UserId = _appData.SelectedUser.Id;
+        NewCampaign.CreationDate = DateTime.Now;
+
+        if (NewCampaign.Id == 0)
+        {
+            //create
+            await _db.InsertCampaign(NewCampaign);
+        }
+        else
+        {
+            //update
+            await _db.UpdateCampaign(NewCampaign);
+        }
+        NewCampaign = new();
+        await LoadCampaigns();
+        //StateHasChanged();
+    }
+
+    private void OnSelectCampaignNotebook(CampaignModel campaignModel)
+    {
+        _appData.SetCampaign(campaignModel);
+        _navigationManager.NavigateTo("/Campaign/Notebook");
+
+    }
+
+
 }
+                                                                                                                                                                                        

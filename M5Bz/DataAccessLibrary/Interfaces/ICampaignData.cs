@@ -6,5 +6,6 @@ namespace DataAccessLibrary.Interfaces
     {
         Task<List<CampaignModel>> GetCampaigns(int userID, int coreRulesID);
         Task InsertCampaign(CampaignModel campaign);
+        Task UpdateCampaign(CampaignModel campaign);
     }
 }

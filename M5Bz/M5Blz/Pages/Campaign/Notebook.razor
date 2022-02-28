@@ -1,0 +1,58 @@
+﻿@page "/Campaign/Notebook"
+<h3>Notebook</h3>
+
+@code {
+    
+    private bool IsLoading { get; set; }
+    private List<Notes> Note { get; set; } = new();
+    //private NoteModel NewCampaign { get; set; } = new();
+
+    protected override async Task OnAfterRenderAsync(bool fistRender)
+    {
+        if (fistRender)
+        {
+            await LoadNotebook();
+        }
+    }
+
+    private async Task LoadNotebook()
+    {
+        IsLoading = true;
+        StateHasChanged();
+        //Campaigns = await _db.Get(_appData.SelectedUser.Id, _appData.SelectedCoreRules.Id);
+        IsLoading = false;
+        StateHasChanged();
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

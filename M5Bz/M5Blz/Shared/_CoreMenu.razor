@@ -14,11 +14,11 @@
     }
 }
 
-@if (_appData?.Id is not 0)
+@if (_appData?.SelectedUser?.Id is not 0)
 {
     <span class="float-end mt-3">
-        @_appData.FirstName
-        @_appData.LastName
+        @_appData.SelectedUser.FirstName
+        @_appData.SelectedUser.LastName
         <img @onclick="Deconnexion" src="/icons/le-crane.png" alt="Image" height="25">
     </span>
 }

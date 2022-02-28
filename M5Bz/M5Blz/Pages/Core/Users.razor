@@ -11,7 +11,7 @@
 <div class="row">
     <div class="col-md-3">
 
-        <EditForm Model="@newUser" OnInvalidSubmit="@InsertUser" class="form-control">
+        <EditForm Model="@newUser" OnValidSubmit="@InsertUser" class="form-control">
             <DataAnnotationsValidator />
             <ValidationSummary />
 
@@ -84,7 +84,7 @@ else
         
     protected override async Task OnInitializedAsync()
     {
-        if (!_appData.IsDM)
+        if (!_appData.SelectedUser.IsDM)
         {
             _navigationManager.NavigateTo("/");
         }
