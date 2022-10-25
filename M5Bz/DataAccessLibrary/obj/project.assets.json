@@ -596,11 +596,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\orwin\\OneDrive\\Documents\\GitHub\\vampM5Bz\\M5Bz\\DataAccessLibrary\\DataAccessLibrary.csproj",
+      "projectUniqueName": "C:\\Git\\ByNight\\Wakoo\\vampM5Bz\\M5Bz\\DataAccessLibrary\\DataAccessLibrary.csproj",
       "projectName": "DataAccessLibrary",
-      "projectPath": "C:\\Users\\orwin\\OneDrive\\Documents\\GitHub\\vampM5Bz\\M5Bz\\DataAccessLibrary\\DataAccessLibrary.csproj",
+      "projectPath": "C:\\Git\\ByNight\\Wakoo\\vampM5Bz\\M5Bz\\DataAccessLibrary\\DataAccessLibrary.csproj",
       "packagesPath": "C:\\Users\\orwin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\orwin\\OneDrive\\Documents\\GitHub\\vampM5Bz\\M5Bz\\DataAccessLibrary\\obj\\",
+      "outputPath": "C:\\Git\\ByNight\\Wakoo\\vampM5Bz\\M5Bz\\DataAccessLibrary\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\orwin\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -657,7 +657,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -2526,11 +2526,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\orwin\\OneDrive\\Documents\\GitHub\\vampM5Bz\\M5Bz\\M5Blz\\M5Blz.csproj",
+      "projectUniqueName": "C:\\Git\\ByNight\\Wakoo\\vampM5Bz\\M5Bz\\M5Blz\\M5Blz.csproj",
       "projectName": "M5Blz",
-      "projectPath": "C:\\Users\\orwin\\OneDrive\\Documents\\GitHub\\vampM5Bz\\M5Bz\\M5Blz\\M5Blz.csproj",
+      "projectPath": "C:\\Git\\ByNight\\Wakoo\\vampM5Bz\\M5Bz\\M5Blz\\M5Blz.csproj",
       "packagesPath": "C:\\Users\\orwin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\orwin\\OneDrive\\Documents\\GitHub\\vampM5Bz\\M5Bz\\M5Blz\\obj\\",
+      "outputPath": "C:\\Git\\ByNight\\Wakoo\\vampM5Bz\\M5Bz\\M5Blz\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\orwin\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -2547,8 +2547,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\orwin\\OneDrive\\Documents\\GitHub\\vampM5Bz\\M5Bz\\DataAccessLibrary\\DataAccessLibrary.csproj": {
-              "projectPath": "C:\\Users\\orwin\\OneDrive\\Documents\\GitHub\\vampM5Bz\\M5Bz\\DataAccessLibrary\\DataAccessLibrary.csproj"
+            "C:\\Git\\ByNight\\Wakoo\\vampM5Bz\\M5Bz\\DataAccessLibrary\\DataAccessLibrary.csproj": {
+              "projectPath": "C:\\Git\\ByNight\\Wakoo\\vampM5Bz\\M5Bz\\DataAccessLibrary\\DataAccessLibrary.csproj"
             }
           }
         }
@@ -2602,7 +2602,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
       }
     }
   }

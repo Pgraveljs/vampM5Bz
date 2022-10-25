@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "aMRBJTe0sPQwLM+jVOb+ThhwTOD66kQnEbz9gJTUIa1Rl1/EHfaFsaaqn75TAUvoL8uSOe3K/+6MTHy3nGjOTA==",
+  "dgSpecHash": "AGVTZ6fGJlyo/QweLn2gJJtxI/dNjHtv282jwSVtVPaYVCdxanfphyQW3GKrJq/wEEi/4sFS3zauSThAF2eiZg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\orwin\\OneDrive\\Documents\\GitHub\\vampM5Bz\\M5Bz\\DataAccessLibrary\\DataAccessLibrary.csproj",
+  "projectFilePath": "C:\\Git\\ByNight\\Wakoo\\vampM5Bz\\M5Bz\\DataAccessLibrary\\DataAccessLibrary.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\orwin\\.nuget\\packages\\dapper\\2.0.123\\dapper.2.0.123.nupkg.sha512",
     "C:\\Users\\orwin\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\6.0.0\\microsoft.extensions.configuration.abstractions.6.0.0.nupkg.sha512",

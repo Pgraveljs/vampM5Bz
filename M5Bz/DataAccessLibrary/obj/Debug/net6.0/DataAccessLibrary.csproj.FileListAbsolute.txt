@@ -10,3 +10,15 @@ C:\Users\orwin\OneDrive\Documents\GitHub\vampM5Bz\M5Bz\DataAccessLibrary\obj\Deb
 C:\Users\orwin\OneDrive\Documents\GitHub\vampM5Bz\M5Bz\DataAccessLibrary\obj\Debug\net6.0\ref\DataAccessLibrary.dll
 C:\Users\orwin\OneDrive\Documents\GitHub\vampM5Bz\M5Bz\DataAccessLibrary\obj\Debug\net6.0\DataAccessLibrary.pdb
 C:\Users\orwin\OneDrive\Documents\GitHub\vampM5Bz\M5Bz\DataAccessLibrary\obj\Debug\net6.0\DataAccessLibrary.csproj.AssemblyReference.cache
+C:\Git\ByNight\Wakoo\vampM5Bz\M5Bz\DataAccessLibrary\bin\Debug\net6.0\DataAccessLibrary.deps.json
+C:\Git\ByNight\Wakoo\vampM5Bz\M5Bz\DataAccessLibrary\bin\Debug\net6.0\DataAccessLibrary.dll
+C:\Git\ByNight\Wakoo\vampM5Bz\M5Bz\DataAccessLibrary\bin\Debug\net6.0\DataAccessLibrary.pdb
+C:\Git\ByNight\Wakoo\vampM5Bz\M5Bz\DataAccessLibrary\obj\Debug\net6.0\DataAccessLibrary.csproj.AssemblyReference.cache
+C:\Git\ByNight\Wakoo\vampM5Bz\M5Bz\DataAccessLibrary\obj\Debug\net6.0\DataAccessLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Git\ByNight\Wakoo\vampM5Bz\M5Bz\DataAccessLibrary\obj\Debug\net6.0\DataAccessLibrary.AssemblyInfoInputs.cache
+C:\Git\ByNight\Wakoo\vampM5Bz\M5Bz\DataAccessLibrary\obj\Debug\net6.0\DataAccessLibrary.AssemblyInfo.cs
+C:\Git\ByNight\Wakoo\vampM5Bz\M5Bz\DataAccessLibrary\obj\Debug\net6.0\DataAccessLibrary.csproj.CoreCompileInputs.cache
+C:\Git\ByNight\Wakoo\vampM5Bz\M5Bz\DataAccessLibrary\obj\Debug\net6.0\DataAccessLibrary.dll
+C:\Git\ByNight\Wakoo\vampM5Bz\M5Bz\DataAccessLibrary\obj\Debug\net6.0\refint\DataAccessLibrary.dll
+C:\Git\ByNight\Wakoo\vampM5Bz\M5Bz\DataAccessLibrary\obj\Debug\net6.0\DataAccessLibrary.pdb
+C:\Git\ByNight\Wakoo\vampM5Bz\M5Bz\DataAccessLibrary\obj\Debug\net6.0\ref\DataAccessLibrary.dll

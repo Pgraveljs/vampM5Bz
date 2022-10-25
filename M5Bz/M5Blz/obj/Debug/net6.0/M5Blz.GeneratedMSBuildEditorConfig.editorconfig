@@ -8,61 +8,61 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = M5Blz
 build_property.RootNamespace = M5Blz
-build_property.ProjectDir = C:\Users\orwin\OneDrive\Documents\GitHub\vampM5Bz\M5Bz\M5Blz\
+build_property.ProjectDir = C:\Git\ByNight\Wakoo\vampM5Bz\M5Bz\M5Blz\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\orwin\OneDrive\Documents\GitHub\vampM5Bz\M5Bz\M5Blz
+build_property.MSBuildProjectDirectory = C:\Git\ByNight\Wakoo\vampM5Bz\M5Bz\M5Blz
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/orwin/OneDrive/Documents/GitHub/vampM5Bz/M5Bz/M5Blz/App.razor]
+[C:/Git/ByNight/Wakoo/vampM5Bz/M5Bz/M5Blz/App.razor]
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/orwin/OneDrive/Documents/GitHub/vampM5Bz/M5Bz/M5Blz/Pages/Campaign/Campaign.razor]
+[C:/Git/ByNight/Wakoo/vampM5Bz/M5Bz/M5Blz/Pages/Campaign/Campaign.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2FtcGFpZ25cQ2FtcGFpZ24ucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/orwin/OneDrive/Documents/GitHub/vampM5Bz/M5Bz/M5Blz/Pages/CoreRules/CoreRules.razor]
+[C:/Git/ByNight/Wakoo/vampM5Bz/M5Bz/M5Blz/Pages/CoreRules/CoreRules.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29yZVJ1bGVzXENvcmVSdWxlcy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/orwin/OneDrive/Documents/GitHub/vampM5Bz/M5Bz/M5Blz/Pages/Core/Identification.razor]
+[C:/Git/ByNight/Wakoo/vampM5Bz/M5Bz/M5Blz/Pages/Core/Identification.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29yZVxJZGVudGlmaWNhdGlvbi5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/orwin/OneDrive/Documents/GitHub/vampM5Bz/M5Bz/M5Blz/Pages/Core/Lifecycle.razor]
+[C:/Git/ByNight/Wakoo/vampM5Bz/M5Bz/M5Blz/Pages/Core/Lifecycle.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29yZVxMaWZlY3ljbGUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/orwin/OneDrive/Documents/GitHub/vampM5Bz/M5Bz/M5Blz/Pages/Core/Users.razor]
+[C:/Git/ByNight/Wakoo/vampM5Bz/M5Bz/M5Blz/Pages/Core/Users.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29yZVxVc2Vycy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/orwin/OneDrive/Documents/GitHub/vampM5Bz/M5Bz/M5Blz/Pages/Index.razor]
+[C:/Git/ByNight/Wakoo/vampM5Bz/M5Bz/M5Blz/Pages/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/orwin/OneDrive/Documents/GitHub/vampM5Bz/M5Bz/M5Blz/Shared/CoreMenu.razor]
+[C:/Git/ByNight/Wakoo/vampM5Bz/M5Bz/M5Blz/Shared/CoreMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENvcmVNZW51LnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/orwin/OneDrive/Documents/GitHub/vampM5Bz/M5Bz/M5Blz/_Imports.razor]
+[C:/Git/ByNight/Wakoo/vampM5Bz/M5Bz/M5Blz/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/orwin/OneDrive/Documents/GitHub/vampM5Bz/M5Bz/M5Blz/Shared/MainLayout.razor]
+[C:/Git/ByNight/Wakoo/vampM5Bz/M5Bz/M5Blz/Shared/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-qo3p3qmmyb
 
-[C:/Users/orwin/OneDrive/Documents/GitHub/vampM5Bz/M5Bz/M5Blz/Pages/Error.cshtml]
+[C:/Git/ByNight/Wakoo/vampM5Bz/M5Bz/M5Blz/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/orwin/OneDrive/Documents/GitHub/vampM5Bz/M5Bz/M5Blz/Pages/_Host.cshtml]
+[C:/Git/ByNight/Wakoo/vampM5Bz/M5Bz/M5Blz/Pages/_Host.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0hvc3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/orwin/OneDrive/Documents/GitHub/vampM5Bz/M5Bz/M5Blz/Pages/_Layout.cshtml]
+[C:/Git/ByNight/Wakoo/vampM5Bz/M5Bz/M5Blz/Pages/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0xheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
