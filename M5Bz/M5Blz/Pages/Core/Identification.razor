@@ -1,4 +1,4 @@
-﻿@inject IUserData _db
+@inject IUserData _db
 @inject AppData appData
 
 
@@ -10,20 +10,14 @@
         <li class="validation-message">@error</li>
     </ul>
     <div class="d-flex justify-content-center">
-
-            <img src="/icons/rpg-game.png" alt="Image" height="150">
-            <div class="pt-5 text-start">
-                <h4 class="fw-bold">Entrer votre code Héros</h4>
-            <InputText  type="password" id="code" @bind-Value="codeModel.Code" class="form-control" placeholder="Code a 4 digits ..." />
-
-
-            </div>
-
+      <img src="/icons/rpg-game.png" alt="Image" height="150">
+      <div class="pt-5 text-start">
+        <h4 class="fw-bold">Entrer votre code Héros</h4>
+        <InputText  type="password" id="code" @bind-Value="codeModel.Code" class="form-control" placeholder="Code a 4 digits ..." />
+      </div>
     </div>
 
-
-</EditForm>
-
+</EditForm> 
 
 @code {
     private string error = "";
@@ -42,6 +36,4 @@
             error = "Le code est invalide.";
         }
     }
-
-
 }

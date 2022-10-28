@@ -1,24 +1,23 @@
 @import url('open-iconic/font/css/open-iconic-bootstrap.min.css');
 :root {
-    --main: #1B1B1E;
-    --second: #468189;
-    --t1: #E98A15;
-    --t2: #887880;
-    --t3: #F9E9EC;
+  --main: #1B1B1E;
+  --second: #468189;
+  --t1: #E98A15;
+  --t2: #887880;
+  --t3: #F9E9EC;
 }
 html, body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    /*background-color: var(--main);*/
-    /*color: var(--second);*/
 }
 
-/*.card {
-    background-color: var(--main);
-    border: 1px solid var(--second);
+main {
+  flex-wrap: nowrap;
+  height: 100vh;
+  max-height: 100vh;
+  overflow-x: auto;
+  overflow-y: hidden;
+  background-image: linear-gradient(to bottom right, #040D1E, #362522);
 }
-a {
-    color: var(--t1);
-}*/
 
 #blazor-error-ui {
     background: lightyellow;
@@ -58,3 +57,13 @@ a {
     list-style-type: none;
     color: red;
 }
+.wakoo-header {
+  height: 150px;
+  background-image: url('../images/bloodhunt_beginners_header.jpg');
+  background-position: 50% 58%;
+  background-repeat: no-repeat; /* Do not repeat the image */
+}
+
+
+
+

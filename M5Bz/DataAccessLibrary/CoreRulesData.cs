@@ -1,4 +1,4 @@
-﻿using DataAccessLibrary.Models;
+using DataAccessLibrary.Models;
 namespace DataAccessLibrary
 {
     public class CoreRulesData : ICoreRulesData
@@ -11,13 +11,13 @@ namespace DataAccessLibrary
         }
         public Task<List<CoreRulesModel>> GetCoreRules()
         {
-            string sql = "select * from dbo.CoreRules";
+            string sql = "select * from Core.CoreRules";
             return _db.LoadData<CoreRulesModel, dynamic>(sql, new { });
         }
 
         public Task InsertUser(CoreRulesModel userModel)
         {
-            string sql = @"insert into dbo.CoreRules (Name)
+            string sql = @"insert into Core.CoreRules (Name)
                             values (@Name);";
 
             return _db.SaveData(sql, userModel);

@@ -5,7 +5,15 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <UserSecretsId>aspnet-M5Blz-2DC4DE44-132D-4424-A4BC-D77E9FDA45C7</UserSecretsId>
+    <LangVersion>preview</LangVersion>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Areas\**" />
+    <Content Remove="Areas\**" />
+    <EmbeddedResource Remove="Areas\**" />
+    <None Remove="Areas\**" />
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="6.0.0" />
@@ -16,7 +24,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Areas\" />
+    <Folder Include="wwwroot\images\" />
   </ItemGroup>
 
   <ItemGroup>

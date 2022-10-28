@@ -1,5 +1,7 @@
-﻿@page "/CoreRules"
+@page "/CoreRules"
 @inject ICoreRulesData _db
+
+
 
 <div class="text-center">
     <h2>Selectionner le système de règles de la campagne</h2>
@@ -19,8 +21,6 @@
 
     }
 </div>
-
-
 <h1>ID : @appData.SelectedCoreRules</h1>
 
 
@@ -30,12 +30,22 @@
     private List<CoreRulesModel> coreRules = new();
     protected override async Task OnInitializedAsync()
     {
-        coreRules = await _db.GetCoreRules();
+      coreRules = await _db.GetCoreRules();
     }
 
     private void CoreRulesSelected(int id)
     {
-        appData.SelectedCoreRules = id;
+      appData.SetCoreRules(id);
+
+      switch (id)
+      {
+        case 1:
+          NavManager.NavigateTo("/M5");
+          break;
+        default:
+          break;
+      }
+
     }
 
 }

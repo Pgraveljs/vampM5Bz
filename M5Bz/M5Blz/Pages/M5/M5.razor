@@ -1,0 +1,49 @@
+@page "/M5"
+<div class="wakoo-header"></div>
+<hr>
+<div class="row">
+<div class="col-md-3">
+<div class="d-flex flex-column p-3 text-white bg-dark">
+  <div>
+      <div class="fs-5">Vampire la masquerade</div>
+      <div class="fs-7">5 édition</div>
+    </div>
+    <hr>
+    <ul class="nav nav-pills flex-column mb-auto">
+      <li class="nav-item m-1"  @onclick="@(e => ActiceSection  = Section.Rules)">
+        <div class="btn btn-outline-primary w-100  @((ActiceSection == Section.Rules? "active" : ""))">
+          Les règles
+        </div>
+      </li>
+      <li class="nav-item m-1"  @onclick="@(e => ActiceSection  = Section.Portland)">
+        <div class="btn btn-outline-primary w-100 @((ActiceSection == Section.Portland? "active" : ""))">
+          Portland by night
+        </div>
+      </li>
+    </ul>
+    <hr>
+  </div>
+  </div>
+  <div class="col-md-9">
+    <div hidden="@(ActiceSection != Section.Rules)">
+      Rules
+      <M5Difficulty></M5Difficulty>
+    </div>
+    <div hidden="@(ActiceSection != Section.Portland)">
+      Portland
+    </div>
+
+  </div></div>
+
+
+@code {
+    private Section ActiceSection { get; set; } = Section.Rules;
+
+    private enum Section
+    {
+        Rules = 1,
+        Portland = 2
+    }
+
+
+}

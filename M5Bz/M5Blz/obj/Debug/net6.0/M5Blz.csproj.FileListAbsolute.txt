@@ -140,7 +140,7 @@ C:\Git\ByNight\Wakoo\vampM5Bz\M5Bz\M5Blz\obj\Debug\net6.0\scopedcss\bundle\M5Blz
 C:\Git\ByNight\Wakoo\vampM5Bz\M5Bz\M5Blz\obj\Debug\net6.0\scopedcss\projectbundle\M5Blz.bundle.scp.css
 C:\Git\ByNight\Wakoo\vampM5Bz\M5Bz\M5Blz\obj\Debug\net6.0\M5Blz.csproj.CopyComplete
 C:\Git\ByNight\Wakoo\vampM5Bz\M5Bz\M5Blz\obj\Debug\net6.0\M5Blz.dll
-C:\Git\ByNight\Wakoo\vampM5Bz\M5Bz\M5Blz\obj\Debug\net6.0\refint\M5Blz.dll
 C:\Git\ByNight\Wakoo\vampM5Bz\M5Bz\M5Blz\obj\Debug\net6.0\M5Blz.pdb
 C:\Git\ByNight\Wakoo\vampM5Bz\M5Bz\M5Blz\obj\Debug\net6.0\M5Blz.genruntimeconfig.cache
 C:\Git\ByNight\Wakoo\vampM5Bz\M5Bz\M5Blz\obj\Debug\net6.0\ref\M5Blz.dll
+C:\Git\ByNight\Wakoo\vampM5Bz\M5Bz\M5Blz\obj\Debug\net6.0\refint\M5Blz.dll
