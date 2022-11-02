@@ -1,4 +1,4 @@
-﻿using DataAccessLibrary.Models;
+using DataAccessLibrary.Models;
 
 namespace DataAccessLibrary
 {
@@ -6,5 +6,6 @@ namespace DataAccessLibrary
     {
         Task<List<CoreRulesModel>> GetCoreRules();
         Task InsertUser(CoreRulesModel coreRulesModel);
+        Task<List<AttributeModel>> GetAttribute();
     }
 }
