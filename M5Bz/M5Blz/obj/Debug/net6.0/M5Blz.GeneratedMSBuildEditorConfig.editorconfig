@@ -43,12 +43,24 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Git/ByNight/Wakoo/vampM5Bz/M5Bz/M5Blz/Pages/M5/CreateM5Vampire.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTTVcQ3JlYXRlTTVWYW1waXJlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Git/ByNight/Wakoo/vampM5Bz/M5Bz/M5Blz/Pages/M5/M5.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTTVcTTUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Git/ByNight/Wakoo/vampM5Bz/M5Bz/M5Blz/Pages/M5/M5Difficulty.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTTVcTTVEaWZmaWN1bHR5LnJhem9y
+[C:/Git/ByNight/Wakoo/vampM5Bz/M5Bz/M5Blz/Pages/M5/M5VampireList.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTTVcTTVWYW1waXJlTGlzdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Git/ByNight/Wakoo/vampM5Bz/M5Bz/M5Blz/Pages/M5/RuleM5Difficulty.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTTVcUnVsZU01RGlmZmljdWx0eS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Git/ByNight/Wakoo/vampM5Bz/M5Bz/M5Blz/Pages/M5/RuleM5Soif.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTTVcUnVsZU01U29pZi5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Git/ByNight/Wakoo/vampM5Bz/M5Bz/M5Blz/Pages/UnderConstruction.razor]

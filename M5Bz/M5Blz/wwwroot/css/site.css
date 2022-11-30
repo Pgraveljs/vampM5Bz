@@ -15,7 +15,6 @@ main {
   height: 100vh;
   max-height: 100vh;
   overflow-x: auto;
-  overflow-y: hidden;
   background-image: linear-gradient(to bottom right, #040D1E, #362522);
 }
 
@@ -61,6 +60,12 @@ main {
   height: 150px;
   background-image: url('../images/bloodhunt_beginners_header.jpg');
   background-position: 50% 58%;
+  background-repeat: no-repeat; /* Do not repeat the image */
+}
+.wakoo-soif {
+  height: 240px;
+  background-image: url('/images/Bloodhunt-Diablerie.jpg');
+  background-position-x: center;
   background-repeat: no-repeat; /* Do not repeat the image */
 }
 

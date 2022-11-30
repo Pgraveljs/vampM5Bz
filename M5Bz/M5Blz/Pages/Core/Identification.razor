@@ -1,4 +1,3 @@
-@inject IUserData _db
 @inject AppData appData
 
 
@@ -25,7 +24,7 @@
 
     private async Task SetUser()
     {
-        var user = await _db.GetUser(codeModel.Code);
+        var user = await _userDb.GetUser(codeModel.Code);
         if (user is not null)
         {
             appData.SetUser(user);

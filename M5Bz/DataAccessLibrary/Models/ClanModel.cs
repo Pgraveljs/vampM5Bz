@@ -10,4 +10,5 @@ namespace DataAccessLibrary.Models
     public int Discipline2Id { get; set; }
     public int Discipline3Id { get; set; }
   }
+
 }

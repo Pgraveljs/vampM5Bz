@@ -1,4 +1,4 @@
-﻿@using System.Net.Http
+@using System.Net.Http
 @using Microsoft.AspNetCore.Authorization
 @using Microsoft.AspNetCore.Components.Authorization
 @using Microsoft.AspNetCore.Components.Forms
@@ -11,7 +11,15 @@
 @using DataAccessLibrary.Models
 @using DataAccessLibrary
 @using M5Blz.Models
+@using M5Blz.Models.M5
+
 @using M5Blz.Services
+
 @inject IJSRuntime JsRuntime
 @inject Services.AppData appData
 @inject NavigationManager NavManager
+
+@inject IUserData _userDb
+@inject ICoreRulesData _CoreDb
+@inject IM5DataAccess _M5Db
+@inject ICampaignData _CampaignDb

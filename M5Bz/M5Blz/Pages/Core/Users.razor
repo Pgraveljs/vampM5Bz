@@ -1,7 +1,5 @@
 @page "/Users"
 
-@inject IUserData _db
-
 <h1>Utilisateurs</h1>
 <br />
 <h4>Ajouter un utilisateur</h4>
@@ -89,7 +87,7 @@ else
         }
         else
         {
-            users = await _db.GetUsers();
+            users = await _userDb.GetUsers();
         }
     }
 
@@ -102,7 +100,7 @@ else
                 Code = newUser.Code,
                 IsDM = newUser.IsDM
             };
-        await _db.InsertUser(model);
+        await _userDb.InsertUser(model);
         users.Add(model);
         model = new();
     }

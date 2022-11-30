@@ -6,6 +6,5 @@ namespace DataAccessLibrary
     {
         Task<List<CoreRulesModel>> GetCoreRules();
         Task InsertUser(CoreRulesModel coreRulesModel);
-        Task<List<AttributeModel>> GetAttribute();
     }
 }

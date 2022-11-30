@@ -1,12 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace DataAccessLibrary.Models
 {
-  internal class SkillPointSystemModel
+  public class SkillPointSystemModel
   {
+    public int Id { get; set; }
+    public int Name { get; set; }
+    public int Nb4 { get; set; }
+    public int Nb3 { get; set; }
+    public int Nb2 { get; set; }
+    public int Nb1 { get; set; }
   }
 }

@@ -1,4 +1,4 @@
-﻿using DataAccessLibrary.Models;
+using DataAccessLibrary.Models;
 
 namespace DataAccessLibrary
 {
@@ -13,13 +13,13 @@ namespace DataAccessLibrary
 
         public Task<List<CampaignModel>> GetCampaigns()
         {
-            string sql = "select * from dbo.Campaign";
+            string sql = "select * from Vm5.Campaign";
             return _db.LoadData<CampaignModel, dynamic>(sql, new { });
         }
 
         public Task InsertCampaign(CampaignModel campaign)
         {
-            string sql = @"insert into dbo.Campaign (Name, CreationDate)
+            string sql = @"insert into Vm5.Campaign (Name, CreationDate)
                             value (@Name, @CreationDate);";
             return _db.SaveData(sql, campaign);
         }

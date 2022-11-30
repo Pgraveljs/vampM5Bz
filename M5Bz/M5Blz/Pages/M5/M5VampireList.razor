@@ -1,0 +1,55 @@
+
+
+
+<h3>Vas vampire</h3>
+<p><div class="btn btn-success">Créer</div></p>
+<div class="card bg-dark text-white rounded-3">
+
+    <table class="table table-striped table-dark">
+        <thead>
+            <tr>
+                <th scope="col">Nom</th>
+                <th scope="col">Clan</th>
+                <th scope="col">Campagne</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var vamp in Source)
+            {
+                <tr>
+                    <td>@vamp.Name</td>
+                    <td>@vamp.ClanName</td>
+                    <td scope="row">@vamp.CampaignName</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+</div>
+
+@code {
+    private List<CharacterModel> Vampires { get; set; } = new();
+    private List<CampaignModel> Campaigns { get; set; } = new();
+    private List<ClanModel> Clans { get; set; } = new();
+    private List<DisplayBaseCharacterModel> Source { get; set; } = new ();
+
+    protected override async Task OnInitializedAsync()
+    {
+        Vampires = await _M5Db.GetCharacters();
+        Campaigns = await _CampaignDb.GetCampaigns();
+        Clans = await _M5Db.GetClan();
+
+        foreach (var vampire in Vampires)
+        {
+            Source.Add(
+              new DisplayBaseCharacterModel(
+              vampire.Id,
+              Clans.First(x => x.Id == vampire.ClanId).Name,
+              Campaigns.First(x => x.Id == vampire.CampaignId).Name,
+              vampire.WhatIsHisNameNow
+              )
+            );
+        }
+        Source.OrderBy(x => x.CampaignName).ThenByDescending(x => x.ClanName).ThenByDescending(x => x.Name);
+    }
+}

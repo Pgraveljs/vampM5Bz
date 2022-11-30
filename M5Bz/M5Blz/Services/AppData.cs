@@ -1,4 +1,4 @@
-﻿using DataAccessLibrary.Models;
+using DataAccessLibrary.Models;
 
 namespace M5Blz.Services
 {
